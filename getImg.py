@@ -5,7 +5,7 @@ import urllib.request, csv
 
 normalview = "http://cube.rider.biz/visualcube.php?fmt=svg&bg=t&stage=f2l&r=y35x-25&case=" # for F2L
 planview = "http://cube.rider.biz/visualcube.php?fmt=svg&view=plan&bg=t&fc="
-dic = csv.DictReader(open('csv/all_algs.csv', newline=''))
+dic = csv.DictReader(open('asset/allAlgs.csv', newline=''))
 
 for row in dic:
     img_path = "cubeImg/"+row["algset"]+"/"+row["name"]+".svg"

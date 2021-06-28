@@ -1,167 +1,167 @@
-name,algset,case,catalog,alg1,alg2,alg3,alg4,video_link,video_image,face_color,orientation
+name,algset,caseid,catalog,alg1,alg2,alg3,alg4,video,videoimg,color,orientation
 F2L01,F2L,F2L 1,Pieces On Top,U R U' R',R' F R F',y' r' U' R U M',U2 R U2 R',https://www.youtube.com/watch?v=8_TtKnJ2ZyY&start=0s,https://img.youtube.com/vi/8_TtKnJ2ZyY/0.jpg,,0
 F2L01-1,F2L,F2L 1,Pieces On Top,F' r U r',F' L F L',y' U R U' R',U F U' F',,,,1
 F2L01-2,F2L,F2L 1,Pieces On Top,U L U' L',U2 L U2 L',r' U L U' x,r' U r f',,,,2
-F2L01-3,F2L,F2L 1,Pieces On Top,U f R' f',r' U' R U M',U2 R2' F R F' R,U R' F' U' F R,,,,3
-F2L02,F2L,F2L 2,Pieces On Top,F R' F' R,y' U' R' U R,y U' L' U L,d' L' U L,,,,0
-F2L02-1,F2L,F2L 2,Pieces On Top,U' L' U L,U r' U' F U F' r,L F' L' F,,,,,1
-F2L02-2,F2L,F2L 2,Pieces On Top,d' R' U R,U' f' L f,y' U' L' U L,l U L' U' M',,,,2
+F2L01-3,F2L,F2L 1,Pieces On Top,U f R' f',r' U' R U M',U2 R2' F R F' R,d L U' L',,,,3
+F2L02,F2L,F2L 2,Pieces On Top,F R' F' R,y' U' R' U R,y U' L' U L,r U R' U' M,,,,0
+F2L02-1,F2L,F2L 2,Pieces On Top,U' L' U L,L F' L' F,U r' U' F U F' r,,,,,1
+F2L02-2,F2L,F2L 2,Pieces On Top,d' R' U R,y' U' L' U L,U' f' L f,l U L' U' M',,,,2
 F2L02-3,F2L,F2L 2,Pieces On Top,U' R' U R,,,,,,,3
-F2L03,F2L,F2L 3,Pieces On Top,F' U' F,y' R' U' R,y L' U' L,S R' F R F' S',,,,0
+F2L03,F2L,F2L 3,Pieces On Top,F' U' F,y' R' U' R,y L' U' L,S U R U' R' S',,,,0
 F2L03-1,F2L,F2L 3,Pieces On Top,L' U' L,U2 R' F R U R' F' R,,,,,,1
-F2L03-2,F2L,F2L 3,Pieces On Top,y R' U' R,f' L' f,f' r' U z,,,,,2
+F2L03-2,F2L,F2L 3,Pieces On Top,f' L' f,y R' U' R,f' r' U z,,,,,2
 F2L03-3,F2L,F2L 3,Pieces On Top,R' U' R,,,,,,,3
 F2L04,F2L,F2L 4,Pieces On Top,R U R',y' f R f',y2 L U L',y F U F',,,,0
 F2L04-1,F2L,F2L 4,Pieces On Top,F U F',y L U L',y' R U R',,,,,1
 F2L04-2,F2L,F2L 4,Pieces On Top,L U L',,,,,,,2
-F2L04-3,F2L,F2L 4,Pieces On Top,f R f',y R U R',y' L U L',U' r R2' U R U' M,,,,3
-F2L05,F2L,F2L 5,Pieces On Top,U' R U R' U2 R U' R',y2 U' L U L' U2 L U' L',U' R U R' U2' R U' R',U' R U R' U' R U2 R',,,,0
+F2L04-3,F2L,F2L 4,Pieces On Top,f R f',y' L U L',y R U R',U2 S' R' U2 R S,,,,3
+F2L05,F2L,F2L 5,Pieces On Top,U' R U R' U2 R U' R',U' R U R' U' R U2 R',y2 U' L U L' U2 L U' L',U' R U R' U2' R U' R',,,,0
 F2L05-1,F2L,F2L 5,Pieces On Top,U R' F r U' r' F' R,U l' U L U' L' U' l,y' U' R U R' U2 R U' R',y U' L U L' U2 L U' L',,,,1
-F2L05-2,F2L,F2L 5,Pieces On Top,U' L U L' U2 L U' L',U' L U L' U' L U2 L',,,,,,2
-F2L05-3,F2L,F2L 5,Pieces On Top,U' R' F R U R' U' F' R,U r' U R U' R' U' r,R2 F' U' F U R2,d' R U R' U2 R U' R',,,,3
+F2L05-2,F2L,F2L 5,Pieces On Top,U' L U L' U' L U2 L',U' L U L' U2 L U' L',,,,,,2
+F2L05-3,F2L,F2L 5,Pieces On Top,U' R' F R U R' U' F' R,U r' U R U' R' U' r,R2 F' U' F U R2,y U' R U R' U2 R U' R',,,,3
 F2L06,F2L,F2L 6,Pieces On Top,U' r U' R' U R U r',y' U R' U' R U2 R' U R,d R' U' R U2 R' U R,y U L' U' L U2 L' U L,,,,0
-F2L06-1,F2L,F2L 6,Pieces On Top,U L' U' L U2' L' U L,F2 R U R' U' F2,U L' U' L U' L F' L' F,U L' U' L U2 L' U L,,,,1
-F2L06-2,F2L,F2L 6,Pieces On Top,U r U' r' U' L U F L',y U R' U' R U R' U2' R,U' l U' L' U L U l',y U R' U' R U2 R' U R,,,,2
+F2L06-1,F2L,F2L 6,Pieces On Top,U L' U' L U2' L' U L,F2 R U R' U' F2,U L' U' L U L' U2 L,R' F2 R U R' U' F2 U R,,,,1
+F2L06-2,F2L,F2L 6,Pieces On Top,U r U' r' U' L U F L',y U R' U' R U R' U2' R,U' l U' L' U L U l',U L F' L' U' L U F L',,,,2
 F2L06-3,F2L,F2L 6,Pieces On Top,U R' U' R U2 R' U R,U R' U' R U R' U2' R,U R' U' R U R' U2 R,,,,,3
-F2L07,F2L,F2L 7,Pieces On Top,U' R U2' R' U2 R U' R',U' R U2 R' U R' F R F',U' R U2 R' U' R U2 R',y2 U' L U2 L' U2 L U' L',,,,0
-F2L07-1,F2L,F2L 7,Pieces On Top,F U R U2' R' U F',d' L U2' L' U2 L U' L',l U2 L2 U' L2 U' l',U' F U2 R U' R' U F',,,,1
+F2L07,F2L,F2L 7,Pieces On Top,U' R U2' R' U2 R U' R',U' R U2 R' U' R U2 R',U' R U2 R' U R' F R F',y2 U' L U2 L' U2 L U' L',,,,0
+F2L07-1,F2L,F2L 7,Pieces On Top,F U R U2' R' U F',d' L U2' L' U2 L U' L',U' F U2 R U' R' U F',l U2 L2 U' L2 U' l',,,,1
 F2L07-2,F2L,F2L 7,Pieces On Top,U' L U2 L' U' L U2 L',U' L U2 L' U2 L U' L',,,,,,2
-F2L07-3,F2L,F2L 7,Pieces On Top,r U2 R2 U' R2 U' r',F R U R2' U' R F',y U' R U2 R' U2 R U' R',f R U R2' U' R f',,,,3
+F2L07-3,F2L,F2L 7,Pieces On Top,r U2 R2 U' R2 U' r',F R U R2' U' R F',f R U R2' U' R f',y U' R U2 R' U2 R U' R',,,,3
 F2L08,F2L,F2L 8,Pieces On Top,d R' U2' R U R' U2' R,r' U2 R2 U R2' U r,y U L' U2 L U2 L' U L,U2 R' F R2 U' R' U' R U R2' F' R,,,,0
-F2L08-1,F2L,F2L 8,Pieces On Top,U L' U2 L U2' L' U L,U L' U2 L U L' U2 L,U L' U2 L U2 L' U L,U L' U2 L U' L F' L' F,,,,1
-F2L08-2,F2L,F2L 8,Pieces On Top,l' U2 L2 U L2 U l,y U R' U2' R U R' U2' R,y U R' U2' R U2 R' U R,f' L' U' L2 U L' f,,,,2
-F2L08-3,F2L,F2L 8,Pieces On Top,U R' U2' R U R' U2' R,U R' U2' R U2 R' U R,U R' U2 R U2 R' U R,U R' U2 R U R' U2 R,,,,3
-F2L09,F2L,F2L 9,Pieces On Top,U' R U' R' U F' U' F,U' R U' R' d R' U' R,d R' U' R U' R' U' R,y2 U' L U' L' y' U L' U' L,,,,0
-F2L09-1,F2L,F2L 9,Pieces On Top,U L' U' L U' L' U' L,U2' L' U L U L' U' L,U2 L' U L U L' U' L,F2 U R U' R' F2,,,,1
-F2L09-2,F2L,F2L 9,Pieces On Top,y U R' U' R U' R' U' R,y U2' R' U R U R' U' R,U' L U' L' U f' L' f,L2 U F U' F' L2,,,,2
+F2L08-1,F2L,F2L 8,Pieces On Top,U L' U2 L U2' L' U L,U L' U2 L U L' U2 L,U L' U2 L U' L F' L' F,U L' U2 L U2 L' U L,,,,1
+F2L08-2,F2L,F2L 8,Pieces On Top,l' U2 L2 U L2 U l,y U R' U2' R U R' U2' R,F' L' U' L2 U L' F,y U R' U2' R U2 R' U R,,,,2
+F2L08-3,F2L,F2L 8,Pieces On Top,U R' U2' R U R' U2' R,U R' U2' R U2 R' U R,U R' U2 R U R' U2 R,U R' U2 R U2 R' U R,,,,3
+F2L09,F2L,F2L 9,Pieces On Top,U' R U' R' U F' U' F,U' R U' R' d R' U' R,d R' U' R U' R' U' R,y U L' U' L U' L' U' L,,,,0
+F2L09-1,F2L,F2L 9,Pieces On Top,U L' U' L U' L' U' L,U2' L' U L U L' U' L,U2 L' U L U L' U' L,U' F U' F' U L' U' L,,,,1
+F2L09-2,F2L,F2L 9,Pieces On Top,y U2' R' U R U R' U' R,y U R' U' R U' R' U' R,U' L U' L' U f' L' f,U L U L' U2 f' L' f,,,,2
 F2L09-3,F2L,F2L 9,Pieces On Top,U2' R' U R U R' U' R,U R' U' R U' R' U' R,U2 R' U R U R' U' R,,,,,3
 F2L10,F2L,F2L 10,Pieces On Top,U' R U R' U R U R',U2 R U' R' U' R U R',U F' U F U' R U R',U y' R' U R U' y R U R',,,,0
-F2L10-1,F2L,F2L 10,Pieces On Top,U L' U L U' F U F',F U' R U R' U2' F',y' U2 R U' R' U' R U R',U' F U F' U F U F',,,,1
+F2L10-1,F2L,F2L 10,Pieces On Top,U L' U L U' F U F',F U' R U R' U2' F',y' U2 R U' R' U' R U R',F' L' U' L U F L' U L,,,,1
 F2L10-2,F2L,F2L 10,Pieces On Top,U' L U L' U L U L',U2 L U' L' U' L U L',,,,,,2
-F2L10-3,F2L,F2L 10,Pieces On Top,R2 U' F' U F R2,U R' U R U' f R f',y U2 R U' R' U' R U R',U' R' U' R U2 f R f',,,,3
-F2L11,F2L,F2L 11,Pieces On Top,y' R U2 R2 U' R2 U' R',U' R U2 R' U F' U' F,U' R U2 R' U y' R' U' R,F' U L' U2' L U2 F,,,,0
+F2L10-3,F2L,F2L 10,Pieces On Top,R2 U' F' U F R2,U R' U R U' f R f',U' R' U' R U2 f R f',y U2 R U' R' U' R U R',,,,3
+F2L11,F2L,F2L 11,Pieces On Top,y' R U2 R2 U' R2 U' R',U' R U2 R' U F' U' F,F' U L' U2' L U2 F,U' R U2 R' d R' U' R,,,,0
 F2L11-1,F2L,F2L 11,Pieces On Top,L U2 L2 U' L2 U' L',L' U L U' L' U L U2' L' U L,F U R U' R' U R U' R' U F',U' F U2 F' U L' U' L,,,,1
 F2L11-2,F2L,F2L 11,Pieces On Top,y R U2' R2' U' R2 U' R',U' L U2 L' U f' L' f,y R U2 R2 U' R2 U' R',,,,,2
 F2L11-3,F2L,F2L 11,Pieces On Top,R U2' R2' U' R2 U' R',R U2 R2 U' R2 U' R',R U2 R2' U' R2 U' R',,,,,3
-F2L12,F2L,F2L 12,Pieces On Top,R' U2' R2 U R2' U R,R U' R' U R U' R' U2 R U' R',R' D' R U2 R' D R2 U R',U R U' R' U' R U R' U' R U R' U',https://www.youtube.com/watch?v=mQ9MINLqfl0&start=0s,https://img.youtube.com/vi/mQ9MINLqfl0/0.jpg,,0
+F2L12,F2L,F2L 12,Pieces On Top,R' U2' R2 U R2' U R,R U' R' U R U' R' U2 R U' R',U R U' R' U' R U R' U' R U R' U',R' U2 R2 U R2 U R,https://www.youtube.com/watch?v=mQ9MINLqfl0&start=0s,https://img.youtube.com/vi/mQ9MINLqfl0/0.jpg,,0
 F2L12-1,F2L,F2L 12,Pieces On Top,F U' R U2' R' U2 F',U L' U2 L U' F U F',y L' U2 L2 U L2' U L,F U' R U2 R' U2 F',,,,1
 F2L12-2,F2L,F2L 12,Pieces On Top,L' U2 L2 U L2' U L,L' U2 L2 U L2 U L,,,,,,2
-F2L12-3,F2L,F2L 12,Pieces On Top,f R' U R2 U' R2' f',U R' U2' R U' f R f',U R' U2 R d' R U R',y' L' U2 L2 U L2' U L,,,,3
-F2L13,F2L,F2L 13,Pieces On Top,y' U R' U R U' R' U' R,y U L' U L U' L' U' L,R U' R' U R' F R F' R U' R',M' U' R U R' U2' R U' r',,,,0
+F2L12-3,F2L,F2L 12,Pieces On Top,U R' U2' R U' f R f',f R' U R2 U' R2' f',U R' U2 R d' R U R',y' L' U2 L2 U L2' U L,,,,3
+F2L13,F2L,F2L 13,Pieces On Top,y' U R' U R U' R' U' R,y U L' U L U' L' U' L,d R' U R U' R' U' R,R U' R' U R' F R F' R U' R',,,,0
 F2L13-1,F2L,F2L 13,Pieces On Top,U L' U L U' L' U' L,L' U L U' L' U2 L U2 L' U L,,,,,,1
 F2L13-2,F2L,F2L 13,Pieces On Top,d L' U L U' L' U' L,U f' L f U' f' L' f,y U R' U R U' R' U' R,,,,,2
 F2L13-3,F2L,F2L 13,Pieces On Top,U R' U R U' R' U' R,,,,,,,3
-F2L14,F2L,F2L 14,Pieces On Top,U' R U' R' U R U R',U' R' F R2 U R' U' R' F' R,y L' U2 L U2 F U2 F' U F U' F',R U' R' U R U2 R' U2 R U' R',,,,0
-F2L14-1,F2L,F2L 14,Pieces On Top,d' L U' L' U L U L',y U' L U' L' U L U L',y' U' R U' R' U R U R',M' U L' U' L U2 L' U l,,,,1
+F2L14,F2L,F2L 14,Pieces On Top,U' R U' R' U R U R',U' R' F R2 U R' U' R' F' R,R U' R' U R U2 R' U2 R U' R',y L' U2 L U2 F U2 F' U F U' F',,,,0
+F2L14-1,F2L,F2L 14,Pieces On Top,y U' L U' L' U L U L',d' L U' L' U L U L',y' U' R U' R' U R U R',L' U L U' L F' L' F L' U L,,,,1
 F2L14-2,F2L,F2L 14,Pieces On Top,U' L U' L' U L U L',,,,,,,2
-F2L14-3,F2L,F2L 14,Pieces On Top,d' R U' R' U R U R',y U' R U' R' U R U R',U' f R' f' U f R f',U' R' U R' F R2 U R' U' F' U' R,,,,3
+F2L14-3,F2L,F2L 14,Pieces On Top,y U' R U' R' U R U R',d' R U' R' U R U R',U' f R' f' U f R f',U' R' U R' F R2 U R' U' F' U' R,,,,3
 F2L15,F2L,F2L 15,Pieces On Top,R' D' R U' R' D R U R U' R',U R' F R F' U R U R',M U r U' r' U' M',R U R' U2 R U' R' U R U' R',,,,0
 F2L15-1,F2L,F2L 15,Pieces On Top,L' U L U2 F U F',F U2 R U R' U F',L' U L U2 y L U L',U' F' U' L' U L F L' U' L,,,,1
-F2L15-2,F2L,F2L 15,Pieces On Top,L U L' U2 L U' L' U L U' L',M' U l U' l' U' M,L U2 L' U L U L' U L U' L',y' L' U L U2 F U F',,,,2
-F2L15-3,F2L,F2L 15,Pieces On Top,R' U R U2' f R f',R2' F R F' R U R' U2' R,R2' F R F' R U2' R' U R,R' U R U2 y R U R',,,,3
-F2L16,F2L,F2L 16,Pieces On Top,R U' R' U2 F' U' F,U F U R U' R' F' R U R',U M' U R U' r' U' R U R',U F R' F' R2 U' R' U2 R U' R',,,,0
+F2L15-2,F2L,F2L 15,Pieces On Top,L U L' U2 L U' L' U L U' L',M' U l U' l' U' M,L U2 L' U L U L' U L U' L',L U' L U2 L2 U' L2 U' L2,,,,2
+F2L15-3,F2L,F2L 15,Pieces On Top,R' U R U2' f R f',R2' F R F' R U R' U2' R,R2' F R F' R U2' R' U R,U' M U' R' U r U R' U' R,,,,3
+F2L16,F2L,F2L 16,Pieces On Top,R U' R' U2 F' U' F,U F U R U' R' F' R U R',U M' U R U' r' U' R U R',R2 B' R' B R' U2 R U' R',,,,0
 F2L16-1,F2L,F2L 16,Pieces On Top,F U' R U' R' U2 F',L' U' L U2 L' U L U' L' U L,M U' l' U l U M',L' U L' U2 L2 U L2 U L2,,,,1
-F2L16-2,F2L,F2L 16,Pieces On Top,L U' L' U2 f' L' f,L U' L' y U2 R' U' R,L2 F' L' F L' U2 L U' L',L U' L' U2 y' r' F' r,,,,2
-F2L16-3,F2L,F2L 16,Pieces On Top,R' U' R U2 R' U R U' R' U R,F R' F' R U2' R' U' R2 U' R',M' U' r' U r U M,f R' f' U2 R' U' R,,,,3
-F2L17,F2L,F2L 17,Pieces On Top,R U2 R' U' R U R',y2 L U2 L' U' L U L',R U2' R' U' R U R',U' R U' R' U2 R U2 R2 F R F',,,,0
-F2L17-1,F2L,F2L 17,Pieces On Top,L F' L' F L' U L U' L' U L,y L U2 L' U' L U L',F U2 F' U' F U F',y' R U2 R' U' R U R',,,,1
+F2L16-2,F2L,F2L 16,Pieces On Top,L U' L' U2 f' L' f,L U' L' y U2 R' U' R,L2 F' L' F L' U2 L U' L',U M U L U' l' U' L U L',,,,2
+F2L16-3,F2L,F2L 16,Pieces On Top,R' U' R U2 R' U R U' R' U R,F R' F' R U2' R' U' R2 U' R',R' U' F R' F' R U2 R,M' U' r' U r U M,,,,3
+F2L17,F2L,F2L 17,Pieces On Top,R U2 R' U' R U R',y2 L U2 L' U' L U L',y L F' L' F L' U L U' L' U L,R U2' R' U' R U R',,,,0
+F2L17-1,F2L,F2L 17,Pieces On Top,L F' L' F L' U L U' L' U L,y L U2 L' U' L U L',y' R U2 R' U' R U R',F U2 F' U' F U F',,,,1
 F2L17-2,F2L,F2L 17,Pieces On Top,L U2 L' U' L U L',,,,,,,2
 F2L17-3,F2L,F2L 17,Pieces On Top,y' L U2 L' U' L U L',y R U2' R' U' R U R',f R2 f' U' f R f',U' F' U' L' U L F R' U' R,,,,3
-F2L18,F2L,F2L 18,Pieces On Top,y' R' U2 R U R' U' R,y L' U2 L U L' U' L,R' F R F' R U' R' U R U' R',F' U2 F U F' U' F,,,,0
+F2L18,F2L,F2L 18,Pieces On Top,y' R' U2 R U R' U' R,y L' U2 L U L' U' L,R' F R F' R U' R' U R U' R',y' R' U2' R U R' U' R,,,,0
 F2L18-1,F2L,F2L 18,Pieces On Top,L' U2 L U L' U' L,,,,,,,1
-F2L18-2,F2L,F2L 18,Pieces On Top,y R' U2' R U R' U' R,y' L' U2 L U L' U' L,f' L2 f U f' L' f,U F U R U' R' F' L U L',,,,2
+F2L18-2,F2L,F2L 18,Pieces On Top,y R' U2' R U R' U' R,f' L2 f U f' L' f,y' L' U2 L U L' U' L,U F U R U' R' F' L U L',,,,2
 F2L18-3,F2L,F2L 18,Pieces On Top,R' U2' R U R' U' R,R' U2 R U R' U' R,,,,,,3
-F2L19,F2L,F2L 19,Pieces On Top,U R U2 R' U R U' R',U R U2 R2 F R F',U R U2' R' U R U' R',R U' R U R' U R U2 R2,,,,0
+F2L19,F2L,F2L 19,Pieces On Top,U R U2 R' U R U' R',U R U2 R2 F R F',U R U2' R' U R U' R',U y' f R2 f' r' U' R U M',,,,0
 F2L19-1,F2L,F2L 19,Pieces On Top,U L' U L2 F' L' F L' U L,y U L U2 L' U L U' L',y' U R U2' R' U R U' R',U F U2 F' U F U' F',,,,1
 F2L19-2,F2L,F2L 19,Pieces On Top,U L U2 L' U L U' L',,,,,,,2
-F2L19-3,F2L,F2L 19,Pieces On Top,y U R U2' R' U R U' R',U R' F' U2' F R U R' U' R,d L U2 L' U L U' L',U R' F' U2 F R U R' U' R,,,,3
+F2L19-3,F2L,F2L 19,Pieces On Top,y U R U2' R' U R U' R',U R' F' U2' F R U R' U' R,U R' F' U2 F R U R' U' R,d L U2 L' U L U' L',,,,3
 F2L20,F2L,F2L 20,Pieces On Top,y' U' R' U2 R U' R' U R,y U' L' U2 L U' L' U L,U' R U' R2' F R F' R U' R',U' R U' R2 F R F' R U' R',,,,0
 F2L20-1,F2L,F2L 20,Pieces On Top,U' L' U2 L U' L' U L,U' L' U2 L2 F' L' F,,,,,,1
-F2L20-2,F2L,F2L 20,Pieces On Top,y U' R' U2 R U' R' U R,U' L F U2 F' L' U' L U L',y' U' L' U2 L U' L' U L,U' L F U2' F' L' U' L U L',,,,2
+F2L20-2,F2L,F2L 20,Pieces On Top,y U' R' U2 R U' R' U R,U' L F U2 F' L' U' L U L',y' U' L' U2 L U' L' U L,U' M U L U2 L' U' L U l',,,,2
 F2L20-3,F2L,F2L 20,Pieces On Top,U' R' U2 R U' R' U R,,,,,,,3
-F2L21,F2L,F2L 21,Pieces On Top,U2 R U R' U R U' R',R U' R' U2 R U R',R B U2 B' R',y R' F R U2 R' F' R,,,,0
+F2L21,F2L,F2L 21,Pieces On Top,R U' R' U2 R U R',U2 R U R' U R U' R',R B U2 B' R',y' f R' f' U2 f R f',,,,0
 F2L21-1,F2L,F2L 21,Pieces On Top,l' U l U2 l' U' l,F R U2 R' F',U2 F R' F R F2,R' F R U2 R' F' R,,,,1
-F2L21-2,F2L,F2L 21,Pieces On Top,L U' L' U2 L U L',U2 L U L' U L U' L',L F U2 F' L',U2 L F' L F L2,,,,2
+F2L21-2,F2L,F2L 21,Pieces On Top,L U' L' U2 L U L',U2 L U L' U L U' L',L F U2 F' L',U2 R U' L U L' R',,,,2
 F2L21-3,F2L,F2L 21,Pieces On Top,r' U r U2' r' U' r,U2 R' U' R S R f' U' F,f U R2 U' f',y U2 R U R' U R U' R',,,,3
 F2L22,F2L,F2L 22,Pieces On Top,r U' r' U2 r U r',F' L' U2 L F,y' U2 R' U' R U' R' U R,y U2 L' U' L U' L' U L,https://www.youtube.com/watch?v=HnLIryzMGCY&start=0s,https://img.youtube.com/vi/HnLIryzMGCY/0.jpg,,0
-F2L22-1,F2L,F2L 22,Pieces On Top,L' U L U2 L' U' L,U2 L' U' L U' L' U L,L' B' U2 B L,U2 R' U L' U' L R,,,,1
+F2L22-1,F2L,F2L 22,Pieces On Top,L' U L U2 L' U' L,U2 L' U' L U' L' U L,L' B' U2 B L,U2 L' U' L2 F' L' F,,,,1
 F2L22-2,F2L,F2L 22,Pieces On Top,l U' l' U2 l U l',f' U' L2' U f,U2 x' U' R U' R' U2 x,,,,,2
 F2L22-3,F2L,F2L 22,Pieces On Top,R' U R U2' R' U' R,U2 R' U' R U' R' U R,U2 R' F R' F' R2,R' U R U2 R' U' R,,,,3
-F2L23,F2L,F2L 23,Pieces On Top,U R U' R' U' R U' R' U R U' R',U F R' F' R U R U R',R U' R2' D' R U2 R' D R,U2 R2 U2 R' U' R U' R2,https://www.youtube.com/watch?v=1CoM811VHvE&start=0s,https://img.youtube.com/vi/1CoM811VHvE/0.jpg,,0
-F2L23-1,F2L,F2L 23,Pieces On Top,F U' R U R' U R U2' R' F',F' U' L' U L F L' U L,U L' U' L2 F' L' F L' U L,y' U R U' R' U' R U' R' U R U' R',,,,1
-F2L23-2,F2L,F2L 23,Pieces On Top,L U L' U2 L U L' U' L U L',U L U' L' U' L U' L' U L U' L',U' L' U' L U' L' U2 L2 U' L',L' U' L U' L' U2 L2 U2 L',,,,2
-F2L23-3,F2L,F2L 23,Pieces On Top,U R' F R' F' R2 U' R' U R,U2 l' U' L U' L' U2 B' l,U' f U R' U' f' R' U' R,U2 R' F' r U' r' F2 U' R,,,,3
-F2L24,F2L,F2L 24,Pieces On Top,F U R U' R' F' R U' R',y' R' U' R U2 R' U' R U R' U' R,y U' L' U L U L' U L U' L' U L,y' U R U R' U R U2 R2 U R,,,,0
-F2L24-1,F2L,F2L 24,Pieces On Top,U' F' r U r' U' L' U' L,F U' R U2 R' U R U2 R' F',L' U' L U2' L' U' L U L' U' L,U2 L2 U2' L U L' U L2,,,,1
-F2L24-2,F2L,F2L 24,Pieces On Top,U2 r U R' U R U2 B r',U2 r U R' U R U2' B r',U2 L F U F2' L F L2',L2 F' L' F U' L' U L U L',,,,2
-F2L24-3,F2L,F2L 24,Pieces On Top,R' U' R U2 R' U' R U R' U' R,U2 R2 U2' R U R' U R2,R U R' U R U2 R2 U2 R,U F U R U' R' S R2' f',,,,3
-F2L25,F2L,F2L 25,Corner In Slot,U' R' F R F' R U R',R' F' R U R U' R' F,U' F' R U R' U' R' F R,l' U' l U l F' l' F,,,,0
-F2L25-1,F2L,F2L 25,Corner In Slot,U' L' U L F' L F L',U' L' U L d R U' R',U' L' U L y' U R U' R',U R' E R U2 R' E' R,,,,1
-F2L25-2,F2L,F2L 25,Corner In Slot,R D' R' U' R D R' L U L',U' f' L' f U L U L',L U' L' U' L U' L' U L U L',L' U' L' U' L' U L U L,,,,2
-F2L25-3,F2L,F2L 25,Corner In Slot,U' R' U M U' R U M',R' S' R U' R' S R,U' R' U R y U R U' R',L' E L U' L' E' L,,,,3
-F2L26,F2L,F2L 26,Corner In Slot,U R U' R' F R' F' R,R S' R' U R S R',U R U' R' U' F' U F,F' M' U' L' U l F,,,,0
-F2L26-1,F2L,F2L 26,Corner In Slot,r U r' U' r' F r F',U L F' L' F L' U' L,L F L' U' L' U L F',U F L' U' L U L F' L',,,,1
-F2L26-2,F2L,F2L 26,Corner In Slot,L S L' U L S' L',U L U' M U L' U' M',U L U' L' y' U' L' U L,R u U R' U' R u' R',,,,2
-F2L26-3,F2L,F2L 26,Corner In Slot,U' R S2' R' U' R S2' R',R U R U R U' R' U' R',U f R f' U' R' U' R,R' U R U R' U R U' R' U' R,,,,3
-F2L27,F2L,F2L 27,Corner In Slot,R U' R' U R U' R',R U' R2 F R F',y' f R' f' r' U' R U M',y' f R' f' U2 f R2 f',,,,0
-F2L27-1,F2L,F2L 27,Corner In Slot,L' U' L U F' L F L',y' R U' R' U R U' R',r' F2 r U2 F' r U r',y L U' L' U L U' L',,,,1
+F2L23,F2L,F2L 23,Pieces On Top,U R U' R' U' R U' R' U R U' R',U F R' F' R U R U R',U2 R2 U2 R' U' R U' R2,R U' R2' D' R U2 R' D R,https://www.youtube.com/watch?v=1CoM811VHvE&start=0s,https://img.youtube.com/vi/1CoM811VHvE/0.jpg,,0
+F2L23-1,F2L,F2L 23,Pieces On Top,F' U' L' U L F L' U L,F U' R U R' U R U2' R' F',U L' U' L2 F' L' F L' U L,F S' R U' R' S U' F',,,,1
+F2L23-2,F2L,F2L 23,Pieces On Top,L U L' U2 L U L' U' L U L',U L U' L' U' L U' L' U L U' L',L U L' U2' L U L' U' L U L',U' L' U' L U' L' U2 L2 U' L',,,,2
+F2L23-3,F2L,F2L 23,Pieces On Top,U R' F R' F' R2 U' R' U R,U2 l' U' L U' L' U2 B' l,U' f U R' U' f' R' U' R,U2 R' F' U' F2 R' F' R2,,,,3
+F2L24,F2L,F2L 24,Pieces On Top,F U R U' R' F' R U' R',y' R' U' R U2 R' U' R U R' U' R,y U' L' U L U L' U L U' L' U L,U' R U R2 F R F' R U' R',,,,0
+F2L24-1,F2L,F2L 24,Pieces On Top,F U' R U2 R' U R U2 R' F',U' F' r U r' U' L' U' L,L' U' L U2' L' U' L U L' U' L,U2 L2 U2' L U L' U L2,,,,1
+F2L24-2,F2L,F2L 24,Pieces On Top,U2 r U R' U R U2 B r',U2 r U R' U R U2' B r',U2 L F U F2' L F L2',U' L U L' U L U' L F' L' F L',,,,2
+F2L24-3,F2L,F2L 24,Pieces On Top,R' U' R U2 R' U' R U R' U' R,U2 R2 U2' R U R' U R2,R U R' U R U2 R2 U2 R,R' F' U' F R U' R' U' R,,,,3
+F2L25,F2L,F2L 25,Corner In Slot,U' R' F R F' R U R',U' F' R U R' U' R' F R,R' F' R U R U' R' F,R' U' R' U' R' U R U R,,,,0
+F2L25-1,F2L,F2L 25,Corner In Slot,U' L' U L F' L F L',U' L' U L d R U' R',U' L' U L y' U R U' R',U2 R' E R U R' E' R,,,,1
+F2L25-2,F2L,F2L 25,Corner In Slot,R D' R' U' R D R' L U L',L U' L' U' L U' L' U L U L',U' f' L' f U L U L',r' U' r U r B' r' B,,,,2
+F2L25-3,F2L,F2L 25,Corner In Slot,U' R' U M U' R U M',R' S' R U' R' S R,U' R' U R y U R U' R',L' u' U' L U L' u L,,,,3
+F2L26,F2L,F2L 26,Corner In Slot,U R U' R' F R' F' R,R S' R' U R S R',U R U' R' U' F' U F,y' R U R U R U' R' U' R',,,,0
+F2L26-1,F2L,F2L 26,Corner In Slot,r U r' U' r' F r F',U L F' L' F L' U' L,L F L' U' L' U L F',U F L' U' L U r U' r',,,,1
+F2L26-2,F2L,F2L 26,Corner In Slot,L S L' U L S' L',U L U' L' y U' R' U R,U L U' M U L' U' M',U L U' L' y' U' L' U L,,,,2
+F2L26-3,F2L,F2L 26,Corner In Slot,R U R U R U' R' U' R',U' R S2' R' U' R S2' R',U f R f' U' R' U' R,R' U R U R' U R U' R' U' R,,,,3
+F2L27,F2L,F2L 27,Corner In Slot,R U' R' U R U' R',y' f R' f' U2 f R2 f',y L' U' L U2 F U' F',y' f R' f' U f R' f',,,,0
+F2L27-1,F2L,F2L 27,Corner In Slot,L' U' L U F' L F L',y L U' L' U L U' L',y' R U' R' U R U' R',r' F2 r U2 F' r U r',,,,1
 F2L27-2,F2L,F2L 27,Corner In Slot,L U' L' U L U' L',,,,,,,2
-F2L27-3,F2L,F2L 27,Corner In Slot,R' U2 R' F R F' R,R' U' R U r' U' R U M',R' U2' R' F R F' R,y R U' R2' F R F',,,,3
+F2L27-3,F2L,F2L 27,Corner In Slot,R' U2 R' F R F' R,R' U' R U r' U' R U M',R' U2' R' F R F' R,y R U' R' U R U' R',,,,3
 F2L28,F2L,F2L 28,Corner In Slot,y L' U L U' L' U L,R U R' U' F R' F' R,y' R' U R U' R' U R,R U R' U2 F' U F,,,,0
 F2L28-1,F2L,F2L 28,Corner In Slot,L' U L U' L' U L,L' U L2 F' L' F,,,,,,1
-F2L28-2,F2L,F2L 28,Corner In Slot,L U2 L F' L' F L',L U L' U' l U L' U' M',y R' U R U' R' U R,U2 r U' L U L' U' L U r2' x,,,,2
+F2L28-2,F2L,F2L 28,Corner In Slot,L U L' U' l U L' U' M',L U2 L F' L' F L',y R' U R U' R' U R,U2 r U' L U L' U' L U r2' x,,,,2
 F2L28-3,F2L,F2L 28,Corner In Slot,R' U R U' R' U R,,,,,,,3
 F2L29,F2L,F2L 29,Corner In Slot,R' F R F' U R U' R',y L' U' L U L' U' L,y' R' U' R U R' U' R,R' F R F' R' F R F',,,,0
 F2L29-1,F2L,F2L 29,Corner In Slot,L' U' L U L' U' L,U F' L F L2 U' L,U L' U2 L U2' L' U' L,F' L F L' F' L F L',,,,1
-F2L29-2,F2L,F2L 29,Corner In Slot,y R' U' R U R' U' R,f' L' f U f' L' f,,,,,,2
+F2L29-2,F2L,F2L 29,Corner In Slot,f' L' f U f' L' f,y R' U' R U R' U' R,,,,,,2
 F2L29-3,F2L,F2L 29,Corner In Slot,R' U' R U R' U' R,U R' U2 R U2 R' U' R,U R' U2' R U2 R' U' R,,,,,3
-F2L30,F2L,F2L 30,Corner In Slot,R U R' U' R U R',U' F R' F' R2 U R',y U' L' U' L U2 F U2 F' U F U' F',F R' F' R F R' F' R,,,,0
-F2L30-1,F2L,F2L 30,Corner In Slot,y L U L' U' L U L',L F' L' F U' L' U L,U' F U' R U2 R' F',L F' L' F L F' L' F,,,,1
+F2L30,F2L,F2L 30,Corner In Slot,R U R' U' R U R',F R' F' R F R' F' R,U' R U2' R' U2' R U R',U' F R' F' R2 U R',,,,0
+F2L30-1,F2L,F2L 30,Corner In Slot,y L U L' U' L U L',L F' L' F U' L' U L,U' F U' R U2 R' F',y' R U R' U' R U R',,,,1
 F2L30-2,F2L,F2L 30,Corner In Slot,L U L' U' L U L',U' L U2 L' U2' L U L',,,,,,2
 F2L30-3,F2L,F2L 30,Corner In Slot,y' L U L' U' L U L',f R f' U' f R f',y R U R' U' R U R',,,,,3
-F2L31,F2L,F2L 31,Edge In Slot,U' R' F R F' R U' R',R U' R' U2 F R' F' R,R U' R' U y' R' U R,U R U2 R' F' U' F,https://www.youtube.com/watch?v=XI1XxQgw7wY&start=0s,https://img.youtube.com/vi/XI1XxQgw7wY/0.jpg,,0
+F2L31,F2L,F2L 31,Edge In Slot,U' R' F R F' R U' R',R U' R' U2 F R' F' R,R U' R' U y' R' U R,R U' R B' R' B R',https://www.youtube.com/watch?v=XI1XxQgw7wY&start=0s,https://img.youtube.com/vi/XI1XxQgw7wY/0.jpg,,0
 F2L31-1,F2L,F2L 31,Edge In Slot,U L F' L' F L' U L,L' U L U' y L U' L',L' U L U' y' R U' R',,,,,1
 F2L31-2,F2L,F2L 31,Edge In Slot,L U' L F' L' F L',B' U B L U2 L',y R' U R' F R F' R,,,,,2
-F2L31-3,F2L,F2L 31,Edge In Slot,R' U R' F R F' R,R' U R U' y R U' R',U R f' U' f R' U R,f R' f' R' U2 R,,,,3
+F2L31-3,F2L,F2L 31,Edge In Slot,R' U R' F R F' R,R' U R U' y R U' R',f R' f' R' U2 R,U R f' U' f U R f' U' f,,,,3
 F2L32,F2L,F2L 32,Edge In Slot,U R U' R' U R U' R' U R U' R',U' F R' F' R U' R U R',y U2 F U' R U R' U F',R U R' U' R U R' U' R U R',https://www.youtube.com/watch?v=DobIpboCy5w&start=0s,https://img.youtube.com/vi/DobIpboCy5w/0.jpg,,0
-F2L32-1,F2L,F2L 32,Edge In Slot,U' L' U L U' L' U L U' L' U L,U2 F U' R U R' U F',L2 U' L2 U' L2 U2 L2,L' U' L U L' U' L U L' U' L,,,,1
+F2L32-1,F2L,F2L 32,Edge In Slot,U' L' U L U' L' U L U' L' U L,U2 F U' R U R' U F',L' U' L U L' U' L U L' U' L,L2 U' L2 U' L2 U2 L2,,,,1
 F2L32-2,F2L,F2L 32,Edge In Slot,L U L' U' L U L' U' L U L',U L U' L' U L U' L' U L U' L',L2 U L2 U L2 U2 L2,,,,,2
 F2L32-3,F2L,F2L 32,Edge In Slot,U' R' U R U' R' U R U' R' U R,R' U' R U R' U' R U R' U' R,U2 f R' U R U' R f',R2 U' R2 U' R2 U2 R2,,,,3
-F2L33,F2L,F2L 33,Edge In Slot,U' R U' R' U2 R U' R',U y L' U2 L U' L' U' L,U' y L' U' L U2 L' U' L,U' R U' R' U R' F R F',,,,0
-F2L33-1,F2L,F2L 33,Edge In Slot,R' D R U' R' D' R,U' L D L' U L D' L',U L D L' U' L D' L',U' L' U' L U2 L' U' L,,,,1
+F2L33,F2L,F2L 33,Edge In Slot,U' R U' R' U2 R U' R',U' R U' R' U R' F R F',U y L' U2 L U' L' U' L,U' y L' U' L U2 L' U' L,,,,0
+F2L33-1,F2L,F2L 33,Edge In Slot,R' D R U' R' D' R,U' L D L' U L D' L',U' L' U' L U2 L' U' L,U L D L' U' L D' L',,,,1
 F2L33-2,F2L,F2L 33,Edge In Slot,U' L U' L' U2 L U' L',,,,,,,2
-F2L33-3,F2L,F2L 33,Edge In Slot,U' R D R' U R D' R',U' R' U' R U2 R' U' R,U R D R' U' R D' R',,,,,3
+F2L33-3,F2L,F2L 33,Edge In Slot,U' R D R' U R D' R',U R D R' U' R D' R',U' R' U' R U2 R' U' R,,,,,3
 F2L34,F2L,F2L 34,Edge In Slot,U R U R' U2 R U R',U' R U2 R' U R U R',U R' D' R U' R' D R,y U L' U L U2 L' U L,,,,0
 F2L34-1,F2L,F2L 34,Edge In Slot,U L' U L U2' L' U L,U L' U L U2 L' U L,U L' U L U L' U2 L,,,,,1
 F2L34-2,F2L,F2L 34,Edge In Slot,U L U L' U2 L U L',U L' D' L U' L' D L,U' L' D' L U L' D L,,,,,2
 F2L34-3,F2L,F2L 34,Edge In Slot,U R' U R U R' U2' R,U R' U R U2' R' U R,U R' U R U2 R' U R,U R2' F R F' R U' R' U R,,,,3
-F2L35,F2L,F2L 35,Edge In Slot,U' R U R' d R' U' R,U' R U R' U F' U' F,U2 R U R' F R' F' R,U2 R U' R' U' F' U' F,,,,0
-F2L35-1,F2L,F2L 35,Edge In Slot,U' F U F' U L' U' L,U2 F U F' U' L' U L,U2 L F' L' F U2 L' U' L,y' U' R U R' d R' U' R,,,,1
-F2L35-2,F2L,F2L 35,Edge In Slot,U2 L U L' U' L F U F' L',U' L U L' y U R' U' R,U2 L U L' y U' R' U R,U' L U L' U f' L' f,,,,2
-F2L35-3,F2L,F2L 35,Edge In Slot,U' f R f' U R' U' R,U2 f R f' U' R' U R,R' F R' F' R U R U' R' U' R,U R' U' M U R U' R' U' r,,,,3
+F2L35,F2L,F2L 35,Edge In Slot,U' R U R' d R' U' R,U' R U R' U F' U' F,U2 R U R' F R' F' R,U M' U R U' r' R U' R',,,,0
+F2L35-1,F2L,F2L 35,Edge In Slot,U2 F U F' U' L' U L,U2 L F' L' F U2 L' U' L,U' F U F' U L' U' L,y' U' R U R' d R' U' R,,,,1
+F2L35-2,F2L,F2L 35,Edge In Slot,U2 L U L' U' L F U F' L',U' L U L' U f' L' f,U2 L U' L' y U' R' U' R,U' L F' L F L' U L',,,,2
+F2L35-3,F2L,F2L 35,Edge In Slot,R' F R' F' R U R U' R' U' R,U' f R f' U R' U' R,U2 f R f' U' R' U R,U R' U' M U R U' R' U' r,,,,3
 F2L36,F2L,F2L 36,Edge In Slot,U F' U' F U' R U R',U2 R' F R F' U2 R U R',U2 F' U F U R U R',R2 u R U R' U' u' R' U R',,,,0
-F2L36-1,F2L,F2L 36,Edge In Slot,U2 L' U L U F U F',U L' U' L y' U' R U R',U2 L' U' L F' L F L',U L' U' L U' F U F',,,,1
-F2L36-2,F2L,F2L 36,Edge In Slot,U f' L' f U' L U L',U2 f' L' f U L U' L',y U2' R' U R d L U L',y' U L' U' L U' F U F',,,,2
-F2L36-3,F2L,F2L 36,Edge In Slot,U2 R' U' R U R' F' U' F R,U R' F R' F' R U' R,U2 R' U R U f R f',U R' U' R y U' R U R',,,,3
+F2L36-1,F2L,F2L 36,Edge In Slot,U2 L' U L U F U F',U2 L' U' L F' L F L',U L' U' L y' U' R U R',U L' U' L U' F U F',,,,1
+F2L36-2,F2L,F2L 36,Edge In Slot,U f' L' f U' L U L',U2 f' L' f U L U' L',y U2' R' U R d L U L',U' L U M U' L' U L U l',,,,2
+F2L36-3,F2L,F2L 36,Edge In Slot,U2 R' U' R U R' F' U' F R,U R' F R' F' R U' R,U R' U' R y U' R U R',U2 R' U' R y U R U' R',,,,3
 F2L37,F2L,F2L 37,Pieces In Slot,R2 U2 F R2 F' U2 R' U R',R' F R F' R U' R' U R U' R' U2 R U' R',R' F R F' R' U2 R2 U R2 U R,R U2 R' U R U2 R' U y' R' U' R,https://www.youtube.com/watch?v=GfylDBpYAOk&start=0s,https://img.youtube.com/vi/GfylDBpYAOk/0.jpg,,0
-F2L37-1,F2L,F2L 37,Pieces In Slot,L2' U2' F' L2' F U2' L U' L,L' U2 L U' L' U2 L U' F U F',L F' L' F L U2 L2' U' L2 U' L',L' U L l U2 L2' U' L2 U' l',,,,1
-F2L37-2,F2L,F2L 37,Pieces In Slot,L U' L' F' L' U' L2 U L' F,L U' L' l' U2 L2 U L2 U l,L U2 L' U L U2 L' U f' L' f,L' f U f' L' U2 L2 U L2' U L,,,,2
-F2L37-3,F2L,F2L 37,Pieces In Slot,R' U R F R U R2' U' R F',R' U R r U2 R2 U' R2 U' r',R2 U2 B' R2 B U2 R U' R,R f' U' f R U2' R2' U' R2 U' R',,,,3
-F2L38,F2L,F2L 38,Pieces In Slot,R U' R' U' R U R' U2 R U' R',R U R' U' R U2 R' U' R U R',R2 U2 R' U' R U' R' U2 R',F' L' U2 L U' L' U2 L U' F,,,,0
-F2L38-1,F2L,F2L 38,Pieces In Slot,L' U L U' L' U2 L U' L' U L,L' U2 L' U' L U' L' U2 L2,F U' R U2 R' U' R U2 R' F',L' U2 L U' L' U L U' L' U' L,,,,1
-F2L38-2,F2L,F2L 38,Pieces In Slot,L U L' U' L U2 L' U' L U L',L U' L' U' L U L' U2 L U' L',L2 U2 L' U' L U' L' U2 L',L U2 R U2 R' U' R U' R' L',,,,2
-F2L38-3,F2L,F2L 38,Pieces In Slot,R' U' R U2 R' U R U' R' U' R,R' U2 R' U' R U' R' U2 R2,R' U R U' R' U2' R U' R' U R,,,,,3
-F2L39,F2L,F2L 39,Pieces In Slot,R U' R' U R U2 R' U R U' R',R U R' U2 R U' R' U R U R',F' L' U2 L U L' U' L U2 F,R U2 R U R' U R U2 R2,,,,0
+F2L37-1,F2L,F2L 37,Pieces In Slot,L F' L' F L U2 L2' U' L2 U' L',L2' U2' F' L2' F U2' L U' L,L' U2 L U' L' U2 L U' F U F',L' U L l U2 L2' U' L2 U' l',,,,1
+F2L37-2,F2L,F2L 37,Pieces In Slot,L U' L' l' U2 L2 U L2 U l,L U' L' F' L' U' L2 U L' F,L' f U f' L' U2 L2 U L2' U L,L U2 L' U L U2 L' U f' L' f,,,,2
+F2L37-3,F2L,F2L 37,Pieces In Slot,R' U R r U2 R2 U' R2 U' r',R' U R F R U R2' U' R F',R f' U' f R U2' R2' U' R2 U' R',R2 U2 B' R2 B U2 R U' R,,,,3
+F2L38,F2L,F2L 38,Pieces In Slot,R U' R' U' R U R' U2 R U' R',R2 U2 R' U' R U' R' U2 R',R U R' U' R U2 R' U' R U R',F' L' U2 L U' L' U2 L U' F,,,,0
+F2L38-1,F2L,F2L 38,Pieces In Slot,L' U L U' L' U2 L U' L' U L,L' U2 L' U' L U' L' U2 L2,L' U' L U2 L' U L U' L' U' L,F U' R U2 R' U' R U2 R' F',,,,1
+F2L38-2,F2L,F2L 38,Pieces In Slot,L U L' U' L U2 L' U' L U L',L2 U2 L' U' L U' L' U2 L',L U' L' U' L U L' U2 L U' L',L U2 R U2 R' U' R U' R' L',,,,2
+F2L38-3,F2L,F2L 38,Pieces In Slot,R' U' R U2 R' U R U' R' U' R,R' U R U' R' U2' R U' R' U R,R' U2 R' U' R U' R' U2 R2,,,,,3
+F2L39,F2L,F2L 39,Pieces In Slot,R U' R' U R U2 R' U R U' R',R U2 R U R' U R U2 R2,y F R U2 R' U R U2 R' U F',R U R' U2 R U' R' U R U R',,,,0
 F2L39-1,F2L,F2L 39,Pieces In Slot,L' U L U L' U' L U2' L' U L,L' U L U L' U' L U2 L' U L,L2 U2 L U L' U L U2 L,F U2 R U' R' U R U2' R' F',,,,1
-F2L39-2,F2L,F2L 39,Pieces In Slot,L U L' U2' L U' L' U L U L',L U' L' U L U2 L' U L U' L',L U2 L U L' U L U2 L2,,,,,2
+F2L39-2,F2L,F2L 39,Pieces In Slot,L U L' U2' L U' L' U L U L',L U2 L U L' U L U2 L2,L U' L' U L U2 L' U L U' L',,,,,2
 F2L39-3,F2L,F2L 39,Pieces In Slot,R' U' R U R' U2' R U R' U' R,f R2 U R' U' F R' f' U F',R' U R U R' U' R U2' R' U R,R2 U2 R U R' U R U2 R,,,,3
-F2L40,F2L,F2L 40,Pieces In Slot,r U' r' U2 r U r' R U R',F' L' U2 L F R U R',R F U R U' R' F' U' R',y L' U L R' F R U2 R' F' R,,,,0
-F2L40-1,F2L,F2L 40,Pieces In Slot,L' U L F R U2' R' F',L' U L l' U l U2' l' U' l,F U' F U R U' R' F2,L' U L l' U l U2 l' U' l,,,,1
-F2L40-2,F2L,F2L 40,Pieces In Slot,l U' l' U2 l U l' L U L',y R' U R U2' y R U R' U R U' R',,,,,,2
-F2L40-3,F2L,F2L 40,Pieces In Slot,R' U R r' U r U2 r' U' r,R2 F' U' F U R U' R,R' U R U2' y R U R' U R U' R',,,,,3
-F2L41,F2L,F2L 41,Pieces In Slot,R U' R' r U' r' U2 r U r',R U F R U R' U' F' R',R U R' U' R U' R' U2 y' R' U' R,R U' R' L F' L' U2 L F L',,,,0
-F2L41-1,F2L,F2L 41,Pieces In Slot,l' U l U2 l' U' l L' U' L,L' U L U L' U L U' y L U L',F2 R' F' R2 U' R' U2 F',F2' R U R' U' F' U F',,,,1
-F2L41-2,F2L,F2L 41,Pieces In Slot,L U' L' l U' l' U2' l U l',L U' L' l U' l' U2 l U l',L U' L' d' U' R' U' R U' R' U R,,,,,2
+F2L40,F2L,F2L 40,Pieces In Slot,r U' r' U2 r U r' R U R',R F U R U' R' F' U' R',F' L' U2 L F R U R',F' r' F2 r F R U R',,,,0
+F2L40-1,F2L,F2L 40,Pieces In Slot,L' U L F R U2' R' F',L' U L l' U l U2' l' U' l,L' U L l' U l U2 l' U' l,F U' F U R U' R' F2,,,,1
+F2L40-2,F2L,F2L 40,Pieces In Slot,l U' l' U2 l U l' L U L',y R' U R U2' y R U R' U R U' R',R B' R' U2 R B R' L U L',f' U' L2 U f L U L',,,,2
+F2L40-3,F2L,F2L 40,Pieces In Slot,R' U R f U R2 U' f',R' U R r' U r U2 r' U' r,R2 F' U' F U R U' R,R' U R U2' y R U R' U R U' R',,,,3
+F2L41,F2L,F2L 41,Pieces In Slot,R U' R' r U' r' U2 r U r',R U F R U R' U' F' R',R U R' U' R U' R' U2 y' R' U' R,y F R U2 R' F' L' U' L,,,,0
+F2L41-1,F2L,F2L 41,Pieces In Slot,l' U l U2 l' U' l L' U' L,F R U2 R' F' L' U' L,F2 R' F' R2 U' R' U2 F',L' U L U L' U L U' y L U L',,,,1
+F2L41-2,F2L,F2L 41,Pieces In Slot,L U' L' l U' l' U2' l U l',L U' L' d' U' R' U' R U' R' U R,L U' L' l U' l' U2 l U l',,,,,2
 F2L41-3,F2L,F2L 41,Pieces In Slot,r' U r U2 r' U' r R' U' R,R' U R' U' F' U F R2,R' U R U R' U R U' y R U R',,,,,3
 OLL01,OLL,OLL 1,Dot Case,R U2 R2 F R F' U2 R' F R F',y R U' R2 D' r U' r' D R2 U R',R U2' R2' F R F' U2' R' F R F',M R U R' U R U' R' U r U2' r' U' M',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=654s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllyllllyyyoooooolylggggggwwwwwwwwwyyyrrrrrrlylbbbbbb,0
 OLL02,OLL,OLL 2,Dot Case,y' R U' R2' D' r U r' D R2 U R',F R U R' U' S R U R' U' f',y r U r' U2 R U2 R' U2 r U' r',F R U R' U' F' f R U R' U' f',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=665s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllylllllyloooooolyyggggggwwwwwwwwwyyyrrrrrryylbbbbbb,0
@@ -173,23 +173,23 @@ OLL07,OLL,OLL 7,Lightning Shapes,r U R' U R U2 r',r U R' U R U2' r',y2 l U L' U 
 OLL08,OLL,OLL 8,Lightning Shapes,y2 r' U' R U' R' U2 r,l' U' L U' L' U2 l,R U2 R' U2 R' F R F',R' F' r U' r' F2 R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=325s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyyllylllrrrrrryylbbbbbbwwwwwwwwwyylooooooyllgggggg,0
 OLL09,OLL,OLL 9,Fish Shapes,y R U R' U' R' F R2 U R' U' F',R U2' R' U' S' R U' R' S,y2 F' U' F r U' r' U r U r',y' L' U' L U' L F' L' F L' U2 L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=237s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyllylyylggggggyllrrrrrrwwwwwwwwwyllbbbbbblyloooooo,0
 OLL10,OLL,OLL 10,Fish Shapes,R U R' U R' F R F' R U2 R',y F U F' R' F R U' R' F' R,y M' R' U2 R U R' U R U M,y2 L' U' L U L F' L2 U' L U F,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=250s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyllyllyloooooollyggggggwwwwwwwwwllyrrrrrrlyybbbbbb,0
-OLL11,OLL,OLL 11,Lightning Shapes,r' R2 U R' U R U2 R' U M',M R U R' U R U2 R' U M',y2 S' U2 R U R' U R U2 R' S,y2 r U R' U R' F R F' R U2 r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=338s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllyyyylllyoooooollyggggggwwwwwwwwwlylrrrrrrlyybbbbbb,0
+OLL11,OLL,OLL 11,Lightning Shapes,r' R2 U R' U R U2 R' U M',M R U R' U R U2 R' U M',y2 r U R' U R' F R F' R U2 r',y2 S' U2 R U R' U R U2 R' S,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=338s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllyyyylllyoooooollyggggggwwwwwwwwwlylrrrrrrlyybbbbbb,0
 OLL12,OLL,OLL 12,Lightning Shapes,y' M' R' U' R U' R' U2 R U' M,y' S R' U' R U' R' U2' R U2 S',F R U R' U' F' U F R U R' U' F',y' r R2 U' R U' R' U2 R U' R r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=349s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llylyylylyllooooooyllggggggwwwwwwwwwyylrrrrrrlylbbbbbb,0
 OLL13,OLL,OLL 13,Knight Move Shapes,F U R U2 R' U' R U R' F',F U R U' R2 F' R U R U' R',r U' r' U' r U r' F' U F,r U' r' U' r U r' y L' U L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=474s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyyyllllyoooooolyyggggggwwwwwwwwwlllrrrrrrlyybbbbbb,0
-OLL14,OLL,OLL 14,Knight Move Shapes,R' F R U R' F' R F U' F',r U R' U' r' F R2 U R' U' F',F' U' L' U L2 F L' U' L' U L,y2 r' U r U r' U' r y R U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=486s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyyllylllooooooyylggggggwwwwwwwwwyllrrrrrryylbbbbbb,0
+OLL14,OLL,OLL 14,Knight Move Shapes,R' F R U R' F' R F U' F',r U R' U' r' F R2 U R' U' F',F' U' L' U L2 F L' U' L' U L,l' U l U l' U' l F U' F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=486s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyyllylllooooooyylggggggwwwwwwwwwyllrrrrrryylbbbbbb,0
 OLL15,OLL,OLL 15,Knight Move Shapes,y2 l' U' l L' U' L U l' U l,r' U' r R' U' R U r' U r,r' U' M' U' R U r' U r,y2 R' F' R L' U' L U R' F R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=501s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyyllyllyoooooolylggggggwwwwwwwwwllyrrrrrrlyybbbbbb,0
-OLL16,OLL,OLL 16,Knight Move Shapes,r U r' R U R' U' r U' r',r U M U R' U' r U' r',y2 l U l' L U L' U' l U' l',L F L' R U R' U' L F' L',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=515s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyylllyllooooooyylggggggwwwwwwwwwyllrrrrrrlylbbbbbb,0
+OLL16,OLL,OLL 16,Knight Move Shapes,r U r' R U R' U' r U' r',r U M U R' U' r U' r',y2 l U l' L U L' U' l U' l',y2 F R U R' U' F' R U2 R' U' R U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=515s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyylllyllooooooyylggggggwwwwwwwwwyllrrrrrrlylbbbbbb,0
 OLL17,OLL,OLL 17,Dot Case,R U R' U R' F R F' U2 R' F R F',y2 F R' F' R U S' R U' R' S,y' F' r U r' U' S r' F r S',y2 F R' F' R2 r' U R U' R' U' M',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=705s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylllylllylyloooooolylggggggwwwwwwwwwlyyrrrrrryylbbbbbb,0
-OLL18,OLL,OLL 18,Dot Case,y R U2 R2 F R F' U2 M' U R U' r',R D r' U' r D' R' U' R2 F R F' R,y F S' R U' R' S R U2' R' U' F',y' r' U' R U M' U' R2 F R F' U R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=719s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylylllllylooooooyyyggggggwwwwwwwwwlylrrrrrrlylbbbbbb,0
-OLL19,OLL,OLL 19,Dot Case,y S' R U R' S U' R' F R F',M U R U R' U' M' R' F R F',y2 r U2 R' U' R U' r2 U2 R U R' U r,M U R U R' U' r R2' F R F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=737s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylyllllyyloooooolylggggggwwwwwwwwwlyyrrrrrrlylbbbbbb,0
+OLL18,OLL,OLL 18,Dot Case,y R U2 R2 F R F' U2 M' U R U' r',R D r' U' r D' R' U' R2 F R F' R,y F S' R U' R' S R U2' R' U' F',r U R' U R U2 r2 U' R U' R' U2 r,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=719s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylylllllylooooooyyyggggggwwwwwwwwwlylrrrrrrlylbbbbbb,0
+OLL19,OLL,OLL 19,Dot Case,y S' R U R' S U' R' F R F',M U R U R' U' M' R' F R F',y2 r U2 R' U' R U' r2 U2 R U R' U r,M U' L' U' L U M' L F' L' F,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=737s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylyllllyyloooooolylggggggwwwwwwwwwlyyrrrrrrlylbbbbbb,0
 OLL20,OLL,OLL 20,Dot Case,S' R U R' S U' M' U R U' r',r U R' U' M2 U R U' R' U' M',S R' U' R U R U R U' R' S',M U R U R' U' M2 U R U' r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=750s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylylylylyloooooolylggggggwwwwwwwwwlylrrrrrrlylbbbbbb,0
 OLL21,OLL,OLL 21,COLL,R U R' U R U' R' U R U2 R',y R U2 R' U' R U R' U' R U' R',y F R U R' U' R U R' U' R U R' U' F',y R' U2 R U R' U' R U R' U R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=11s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyyylylylygggggglllrrrrrrwwwwwwwwwylybbbbbbllloooooo,0
 OLL22,OLL,OLL 22,COLL,R U2 R2 U' R2 U' R2 U2 R,R' U2 R2 U R2 U R2 U2 R',R U2' R2' U' R2 U' R2' U2' R,f R U R' U' S' R U R' U' F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=25s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyyylylllloooooollyggggggwwwwwwwwwylyrrrrrryllbbbbbb,0
-OLL23,OLL,OLL 23,COLL,R2 D R' U2 R D' R' U2 R',y2 R2 D' R U2 R' D R U2 R,R U R' U R U2 R2 U' R U' R' U2 R,y R U R' U' R U' R' U2 R U' R' U2 R U R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=39s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyyyyylyllllooooooylyggggggwwwwwwwwwlllrrrrrrlllbbbbbb,0
+OLL23,OLL,OLL 23,COLL,R2 D R' U2 R D' R' U2 R',y2 R2 D' R U2 R' D R U2 R,R U R' U R U2 R2 U' R U' R' U2 R,y2 R' U' R U' R' U2' R2 U R' U R U2' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=39s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyyyyylyllllooooooylyggggggwwwwwwwwwlllrrrrrrlllbbbbbb,0
 OLL24,OLL,OLL 24,COLL,r U R' U' r' F R F',y2 R' F' r U R U' r' F,y' R' U' R' D' R U R' D R2,y R U R D R' U' R D' R2,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=52s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyyyyylyylllooooooyllggggggwwwwwwwwwlllrrrrrrllybbbbbb,0
 OLL25,OLL,OLL 25,COLL,y F' r U R' U' r' F R,F R' F' r U R U' r',y R2 D R' U R D' R' U' R',y' x' R U' R' D R U R' D' x,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=63s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yylyyylyyllyggggggyllrrrrrrwwwwwwwwwlllbbbbbbllloooooo,0
 OLL26,OLL,OLL 26,COLL,y R U2 R' U' R U' R',R' U' R U' R' U2 R,y2 L' U' L U' L' U2 L,y R U2' R' U' R U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=74s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yylyyylylyllggggggyllrrrrrrwwwwwwwwwlllbbbbbbylloooooo,0
-OLL27,OLL,OLL 27,COLL,R U R' U R U2 R',y' R' U2 R U R' U R,R U R' U R U2' R',y2 L U L' U L U2 L',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=84s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyyyyylllyoooooollyggggggwwwwwwwwwlllrrrrrrllybbbbbb,0
+OLL27,OLL,OLL 27,COLL,R U R' U R U2 R',y' R' U2 R U R' U R,R U R' U R U2' R',y L' U2 L U L' U L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=84s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyyyyylllyoooooollyggggggwwwwwwwwwlllrrrrrrllybbbbbb,0
 OLL28,OLL,OLL 28,All Corners Oriented,r U R' U' M U R U' R',y2 M' U M U2 M' U M,R' F R S R' F' R S',r U R' U' r' R U R U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=97s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyyyylylylyloooooolylggggggwwwwwwwwwlllrrrrrrlllbbbbbb,0
 OLL29,OLL,OLL 29,Awkward Shapes,r2 D' r U r' D r2 U' r' U' r,y R U R' U' R U' R' F' U' F R U R',y S' R U R' U' R' F R F' U S,M U R U R' U' R' F R F' M',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=589s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylyyyllylyyloooooolllggggggwwwwwwwwwllyrrrrrrlylbbbbbb,0
 OLL30,OLL,OLL 30,Awkward Shapes,y' r' D' r U' r' D r2 U' r' U r U r',y2 F R' F R2 U' R' U' R U R' F2,y2 F U R U2 R' U' R U2 R' U' F',y S' R' U' R f R' U R U' F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=605s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylyylylyllrrrrrrlllbbbbbbwwwwwwwwwlyyoooooolylgggggg,0
@@ -197,24 +197,24 @@ OLL31,OLL,OLL 31,P Shapes,R' U' F U R U' R' F' R,y S R U R' U' f' U' F,y2 S' r' 
 OLL32,OLL,OLL 32,P Shapes,S R U R' U' R' F R f',y2 L U F' U' L' U L F L',R U B' U' R' U R B R',y' R' F R F' U' r U' r' U r U r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=208s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llylyylyylllooooooyllggggggwwwwwwwwwlylrrrrrrlyybbbbbb,0
 OLL33,OLL,OLL 33,T Shapes,R U R' U' R' F R F',y2 L' U' L U L F' L' F,y2 r' F' r U r U' r' F,y r U r D r' U' r D' r2',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=120s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyyllylllooooooyylggggggwwwwwwwwwlllrrrrrrlyybbbbbb,0
 OLL34,OLL,OLL 34,C Shapes,y f R f' U' r' U' R U M',y2 R U R2 U' R' F R U R U' F',y2 R U R' U' B' R' F R F' B,F R U R' U' R' F' r U R U' r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=288s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylyyyylllyllrrrrrrlylbbbbbbwwwwwwwwwllyoooooolylgggggg,0
-OLL35,OLL,OLL 35,Fish Shapes,R U2 R2 F R F' R U2 R',R U2' R2' F R F' R U2' R',y2 R2' F R F' R U2' R' U R U2 R' U' R,y L' U2 L2 F' L' F L' U2 L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=264s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylllyylyyllyooooooyllggggggwwwwwwwwwlylrrrrrrlylbbbbbb,0
+OLL35,OLL,OLL 35,Fish Shapes,R U2 R2 F R F' R U2 R',R U2' R2' F R F' R U2' R',y2 R2' F R F' R U2' R' U R U2 R' U' R,R U2 R' d' R' F R U' R' F' R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=264s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylllyylyyllyooooooyllggggggwwwwwwwwwlylrrrrrrlylbbbbbb,0
 OLL36,OLL,OLL 36,W Shapes,y2 L' U' L U' L' U L U L F' L' F,y R U R2 F' U' F U R2 U2 R',y2 R U R' F' R U R' U' R' F R U' R' F R F',y2 R' F' U' F2 U R U' R' F' R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=145s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yllyyllyylyyrrrrrryllbbbbbbwwwwwwwwwllloooooolylgggggg,0
-OLL37,OLL,OLL 37,Fish Shapes,F R' F' R U R U' R',F R U' R' U' R U R' F',y F' r U r' U' r' F r,y F' L F L' U' L' U L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=277s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yylyylllylyyooooooyylggggggwwwwwwwwwlllrrrrrrlllbbbbbb,0
-OLL38,OLL,OLL 38,W Shapes,R U R' U R U' R' U' R' F R F',y F R U' R' S U' R U R' f',y2 r' F' r U F U2 F' U' r' F' r,y2 L U L' U L U' L' U' L' B L B',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=158s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyyyylyllyyloooooolylggggggwwwwwwwwwlllrrrrrrllybbbbbb,0
+OLL37,OLL,OLL 37,Fish Shapes,F R' F' R U R U' R',F R U' R' U' R U R' F',y F' r U r' U' r' F r,y2 r2 D' r U' r' D r U r,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=277s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yylyylllylyyooooooyylggggggwwwwwwwwwlllrrrrrrlllbbbbbb,0
+OLL38,OLL,OLL 38,W Shapes,R U R' U R U' R' U' R' F R F',y F R U' R' S U' R U R' f',y2 L U L' U L U' L' U' L' B L B',y2 r' F' r U F U2 F' U' r' F' r,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=158s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyyyylyllyyloooooolylggggggwwwwwwwwwlllrrrrrrllybbbbbb,0
 OLL39,OLL,OLL 39,Lightning Shapes,y' f' r U r' U' r' F r S,y L F' L' U' L U F U' L',y' R U R' F' U' F U R U2 R',y' R B' R' U' R U B U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=360s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyllyllyylylgggggglllrrrrrrwwwwwwwwwlyybbbbbbylloooooo,0
-OLL40,OLL,OLL 40,Lightning Shapes,y R' F R U R' U' F' U R,y' f R' F' R U R U' R' S',y' f l' U' l U l F' l' S',U F R U R' F' R' F U' F' U R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=377s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyylylyyllylggggggllyrrrrrrwwwwwwwwwyylbbbbbbllloooooo,0
+OLL40,OLL,OLL 40,Lightning Shapes,y R' F R U R' U' F' U R,y' f R' F' R U R U' R' S',U F R U R' F' R' F U' F' U R,R r D r' U r D' r' U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=377s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyylylyyllylggggggllyrrrrrrwwwwwwwwwyylbbbbbbllloooooo,0
 OLL41,OLL,OLL 41,Awkward Shapes,y2 R U R' U R U2 R' F R U R' U' F',y2 F U R2 D R' U' R D' R2 F',y' S U' R' F' U' F U R S',y2 R' F' U' F R S' R' U R S,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=622s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylylyylyllllrrrrrrylybbbbbbwwwwwwwwwlyloooooolylgggggg,0
 OLL42,OLL,OLL 42,Awkward Shapes,R' U' R U' R' U2 R F R U R' U' F',y F S' R U R' U' F' U S,y R' U' F2 u' R U R' D R2 B,y R' F R F' R' F R F' R U R' U' R U R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=639s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylyyyllyllylooooooylyggggggwwwwwwwwwlllrrrrrrlylbbbbbb,0
 OLL43,OLL,OLL 43,P Shapes,y R' U' F' U F R,y2 F' U' L' U L F,f' L' U' L U f,y' r' F' U' F U r,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=219s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yllyylyylyyyoooooolllggggggwwwwwwwwwlllrrrrrrlylbbbbbb,0
 OLL44,OLL,OLL 44,P Shapes,y2 F U R U' R' F',f R U R' U' f',y R U B U' B' R',y' F R U' R' F' L' U L,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=227s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llylyylyyllloooooolllggggggwwwwwwwwwyyyrrrrrrlylbbbbbb,0
-OLL45,OLL,OLL 45,T Shapes,F R U R' U' F',y R' F' U' F U R,y2 f U R U' R' f',f' U' L' U L f,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=132s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyyllyllloooooolylggggggwwwwwwwwwylyrrrrrrlylbbbbbb,0
-OLL46,OLL,OLL 46,C Shapes,R' U' R' F R F' U R,y2 r' U' F R' F' R U r,y2 L F U' R U R' F' L',y2 r' F' r' F r U' F r,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=300s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyllylyylyyyoooooolllggggggwwwwwwwwwlylrrrrrrlllbbbbbb,0
+OLL45,OLL,OLL 45,T Shapes,F R U R' U' F',y R' F' U' F U R,y2 f U R U' R' f',y' R B U B' U' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=132s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llyyyyllyllloooooolylggggggwwwwwwwwwylyrrrrrrlylbbbbbb,0
+OLL46,OLL,OLL 46,C Shapes,R' U' R' F R F' U R,y2 r' U' F R' F' R U r,y2 L U L F' L' F U' L',y2 L F U' R U R' F' L',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=300s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,yyllylyylyyyoooooolllggggggwwwwwwwwwlylrrrrrrlllbbbbbb,0
 OLL47,OLL,OLL 47,L Shapes,F' L' U' L U L' U' L U F,y' F R' F' R U2 R U' R' U R U2 R',R' U' R' F R F' R' F R F' U R,y2 f' U' L' U L U' L' U L f,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=390s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyylllylyooooooyylggggggwwwwwwwwwlylrrrrrrllybbbbbb,0
-OLL48,OLL,OLL 48,L Shapes,F R U R' U' R U R' U' F',y2 f U R U' R' U R U' R' f',y2 R U R' U R U2 R' U' F R U R' U' F',F R' F' U2' R U R' U R2 U2' R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=405s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyylllllyloooooolyyggggggwwwwwwwwwylyrrrrrryllbbbbbb,0
-OLL49,OLL,OLL 49,L Shapes,y2 r U' r2 U r2 U r2 U' r,l U' l2 U l2 U l2 U' l,R B' R2 F R2 B R2 F' R,R B' R2' F R2 B R2' F' R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=417s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyllylyyyrrrrrryllbbbbbbwwwwwwwwwllloooooolyygggggg,0
+OLL48,OLL,OLL 48,L Shapes,F R U R' U' R U R' U' F',y2 f U R U' R' U R U' R' f',y2 R U R' U R U2 R' U' F R U R' U' F',R U2 R' U' R U R' U2 R' F R F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=405s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lylyylllllyloooooolyyggggggwwwwwwwwwylyrrrrrryllbbbbbb,0
+OLL49,OLL,OLL 49,L Shapes,y2 r U' r2 U r2 U r2 U' r,R B' R2 F R2 B R2 F' R,l U' l2 U l2 U l2 U' l,R B' R2' F R2 B R2' F' R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=417s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyllylyyyrrrrrryllbbbbbbwwwwwwwwwllloooooolyygggggg,0
 OLL50,OLL,OLL 50,L Shapes,r' U r2 U' r2 U' r2 U r',y2 R' F R2 B' R2 F' R2 B R',y2 l' U l2 U' l2 U' l2 U l',y2 R' F R2 B' R2' F' R2 B R',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=429s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllyylylllloooooollyggggggwwwwwwwwwyyyrrrrrryylbbbbbb,0
-OLL51,OLL,OLL 51,Line Shapes,y2 F U R U' R' U R U' R' F',f R U R' U' R U R' U' f',R U2' R' U2 R' F R2 U R' U' F',y' R' U' R' F R F' R U' R' U2 R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=529s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyylllllloooooolyyggggggwwwwwwwwwylyrrrrrryylbbbbbb,0
-OLL52,OLL,OLL 52,Line Shapes,y2 R' F' U' F U' R U R' U R,R U R' U R U' B U' B' R',R U R' U R d' R U' R' F',R' U' R U' R' U F' U F R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=540s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyllylyyyggggggyllrrrrrrwwwwwwwwwlylbbbbbbllyoooooo,0
+OLL51,OLL,OLL 51,Line Shapes,y2 F U R U' R' U R U' R' F',f R U R' U' R U R' U' f',y' R' U' R' F R F' R U' R' U2 R,R U2' R' U2 R' F R2 U R' U' F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=529s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lllyyylllllloooooolyyggggggwwwwwwwwwylyrrrrrryylbbbbbb,0
+OLL52,OLL,OLL 52,Line Shapes,y2 R' F' U' F U' R U R' U R,R U R' U R U' B U' B' R',R U R' U R d' R U' R' F',R U R' U R U' y R U' R' F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=540s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyllylyyyggggggyllrrrrrrwwwwwwwwwlylbbbbbbllyoooooo,0
 OLL53,OLL,OLL 53,L Shapes,y r' U2 R U R' U' R U R' U r,y2 l' U' L U' L' U L U' L' U2 l,r' U' R U' R' U R U' R' U2 r,y' l' U2 L U L' U' L U L' U l,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=443s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,llllyylylylyoooooolllggggggwwwwwwwwwyyyrrrrrrlylbbbbbb,0
 OLL54,OLL,OLL 54,L Shapes,r U R' U R U' R' U R U2 r',y' r U2 R' U' R U R' U' R U' r',y2 l U L' U L U' L' U L U2 l',r U R' U R U' R' U R U2' r',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=458s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyylllylyoooooolylggggggwwwwwwwwwyyyrrrrrrlllbbbbbb,0
 OLL55,OLL,OLL 55,Line Shapes,y R' F U R U' R2 F' R2 U R' U' R,y R' F R U R U' R2 F' R2 U' R' U R U R',R U2 R2 U' R U' R' U2 F R F',y F U' R2 D R' U2 R D' R2 U F',https://www.youtube.com/watch?v=vU6HsK3hvQs&start=556s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,lyllyllylyyyoooooolllggggggwwwwwwwwwyyyrrrrrrlllbbbbbb,0
@@ -222,20 +222,20 @@ OLL56,OLL,OLL 56,Line Shapes,r U r' U R U' R' M' U R U2 r',r U r' U R U' R' U R 
 OLL57,OLL,OLL 57,All Corners Oriented,R U R' U' M' U R U' r',y R U' R' S' R U R' S,y R U R' S' R U' R' S,y S R' F R S' R' F' R,https://www.youtube.com/watch?v=vU6HsK3hvQs&start=109s,https://img.youtube.com/vi/vU6HsK3hvQs/0.jpg,ylyyyyylyllloooooolylggggggwwwwwwwwwlllrrrrrrlylbbbbbb,0
 PLL01,PLL,Aa,Adj Swap,x R' U R' D2 R U' R' D2 R2 x',y x' R2 D2 R' U' R D2 R' U R' x,R' B' R2 D R' U' R D' R' U R' B R,y' x L2 D2 L' U' L D2 L' U L',https://www.youtube.com/watch?v=TWN9LNCHQY8&start=7s,https://img.youtube.com/vi/TWN9LNCHQY8/0.jpg,yyyyyyyyyrogooooooggbggggggwwwwwwwwwbrrrrrrrrobobbbbbb,0
 PLL02,PLL,Ab,Adj Swap,x R2 D2 R U R' D2 R U' R x',R' B' R U' R D R' U R D' R2' B R,y x' R U' R D2 R' U R D2 R2 x,y' x L U' L D2 L' U L D2 L2,https://www.youtube.com/watch?v=TWN9LNCHQY8&start=19s,https://img.youtube.com/vi/TWN9LNCHQY8/0.jpg,yyyyyyyyybobooooooggoggggggwwwwwwwwworrrrrrrrrbgbbbbbb,0
-PLL03,PLL,E,Opp Swap,y x' R U' R' D R U R' D' R U R' D R U' R' D' x,y R' U' R' D' R U' R' D R U R' D' R U R' D R2,y x' L' U L D' L' U' L D L' U' L D' L' U L D,r U R U' r' F R' F' r U R' U' r' F R F',https://www.youtube.com/watch?v=Ge5OOjD9k_k&start=0s,https://img.youtube.com/vi/Ge5OOjD9k_k/0.jpg,yyyyyyyyyrgogggggggrbrrrrrrwwwwwwwwwobrbbbbbbbogoooooo,0
+PLL03,PLL,E,Opp Swap,y x' R U' R' D R U R' D' R U R' D R U' R' D' x,y R' U' R' D' R U' R' D R U R' D' R U R' D R2,R2 U R' d' R U R' U' R U R' U' R U R' F U' F2,y x' R U' R' D R U R' u2 R' U R D R' U' R,https://www.youtube.com/watch?v=Ge5OOjD9k_k&start=0s,https://img.youtube.com/vi/Ge5OOjD9k_k/0.jpg,yyyyyyyyyrgogggggggrbrrrrrrwwwwwwwwwobrbbbbbbbogoooooo,0
 PLL04,PLL,F,Adj Swap,y R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R,R' U R U' R2 F' U' F U R F R' F' R2,y R' F R f' R' F R2 U R' U' R' F' R2 U R' S,y R2' F R F' R' U' F' U F R2 U R' U' R,https://www.youtube.com/watch?v=JvqGU0UZPcE&start=135s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyygboggggggrrrrrrrrrwwwwwwwwwogbbbbbbbbogoooooo,0
-PLL05,PLL,Ga,Adj Swap,R2 U R' U R' U' R U' R2 D U' R' U R D',R2 u R' U R' U' R u' R2 F' U F,D' R2 U R' U R' U' R U' R2 U' D R' U R,R2 U R' U R' U' R U' R2' D U' R' U R D',https://www.youtube.com/watch?v=nBMCuMiSFIg&start=23s,https://img.youtube.com/vi/nBMCuMiSFIg/0.jpg,yyyyyyyyybrgoooooogooggggggwwwwwwwwwrbrrrrrrrogbbbbbbb,0
+PLL05,PLL,Ga,Adj Swap,R2 U R' U R' U' R U' R2 D U' R' U R D',R2 u R' U R' U' R u' R2 F' U F,D' R2 U R' U R' U' R U' R2 U' D R' U R,R2 u R' U R' U' R u' R2 y L' U L,https://www.youtube.com/watch?v=nBMCuMiSFIg&start=23s,https://img.youtube.com/vi/nBMCuMiSFIg/0.jpg,yyyyyyyyybrgoooooogooggggggwwwwwwwwwrbrrrrrrrogbbbbbbb,0
 PLL06,PLL,Gb,Adj Swap,R' U' R U D' R2 U R' U R U' R U' R2 D,y F' U' F R2 u R' U R U' R u' R2,R' d' F R2 u R' U R U' R u' R2,D R' U' R U D' R2 U R' U R U' R U' R2,https://www.youtube.com/watch?v=nBMCuMiSFIg&start=46s,https://img.youtube.com/vi/nBMCuMiSFIg/0.jpg,yyyyyyyyybggoooooogboggggggwwwwwwwwwrorrrrrrrorbbbbbbb,0
 PLL07,PLL,Gc,Adj Swap,R2 U' R U' R U R' U R2 D' U R U' R' D,y2 R2 F2 R U2 R U2 R' F R U R' U' R' F R2,R2' u' R U' R U R' u R2 f R' f',R2' U' R U' R U R' U R2 D' U R U' R' D,https://www.youtube.com/watch?v=nBMCuMiSFIg&start=150s,https://img.youtube.com/vi/nBMCuMiSFIg/0.jpg,yyyyyyyyybrgoooooogboggggggwwwwwwwwwrgrrrrrrroobbbbbbb,0
 PLL08,PLL,Gd,Adj Swap,R U R' U' D R2 U' R U' R' U R' U R2 D',D' R U R' U' D R2 U' R U' R' U R' U R2,R U R' y' R2 u' R U' R' U R' u R2,y R2 F' R U R U' R' F' R U2 R' U2 R' F2 R2,https://www.youtube.com/watch?v=nBMCuMiSFIg&start=154s,https://img.youtube.com/vi/nBMCuMiSFIg/0.jpg,yyyyyyyyybbgoooooogroggggggwwwwwwwwwrorrrrrrrogbbbbbbb,0
 PLL09,PLL,H,EPLL,M2 U M2 U2 M2 U M2,M2 U' M2 U2 M2 U' M2,M2' U' M2' U2' M2' U' M2',M2' U M2' U2 M2' U M2',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=13s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyorooooooogbgggggggwwwwwwwwwrorrrrrrrbgbbbbbbb,0
 PLL10,PLL,Ja,Adj Swap,y2 x R2 F R F' R U2 r' U r U2 x',L' U' L F L' U' L U L F' L2 U L,y R' U L' U2 R U' R' U2 R L,y2 M' R' F R F' R U2 r' U r U2 r',https://www.youtube.com/watch?v=TWN9LNCHQY8&start=104s,https://img.youtube.com/vi/TWN9LNCHQY8/0.jpg,yyyyyyyyyrrrggggggoobrrrrrrwwwwwwwwwbbgbbbbbbggooooooo,0
-PLL11,PLL,Jb,Adj Swap,R U R' F' R U R' U' R' F R2 U' R',R U2 R' U' R U2 L' U R' U' L,L' U R U' L U2 R' U R U2 R',r' F R F' r U2 R' U R U2 R',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=171s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyorroooooorggggggggwwwwwwwwwbbbrrrrrrgoobbbbbb,0
+PLL11,PLL,Jb,Adj Swap,R U R' F' R U R' U' R' F R2 U' R',R U2 R' U' R U2 L' U R' U' L,r' F R F' r U2 R' U R U2 R',R U' F U' R' U' R U F' U2' R',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=171s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyorroooooorggggggggwwwwwwwwwbbbrrrrrrgoobbbbbb,0
 PLL12,PLL,Na,Opp Swap,R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R',F' R U R' U' R' F R2 F U' R' U' R U F' R',R F U' R' U R U F' R2' F' R U R U' R' F,r' D r U2 r' D r U2 r' D r U2 r' D r U2 r' D r,,,yyyyyyyyyorroooooobggggggggwwwwwwwwwroorrrrrrgbbbbbbbb,0
 PLL13,PLL,Nb,Opp Swap,r' D' F r U' r' F' D r2 U r' U' r' F r F',R' U R U' R' F' U' F R U R' F R' F' R U' R,R' U L' U2 R U' L R' U L' U2 R U' L,R' U R U' R' F' U' F R U R' U' R U' f R f',,,yyyyyyyyyrroooooooggbggggggwwwwwwwwwoorrrrrrrbbgbbbbbb,0
-PLL14,PLL,Ra,Adj Swap,y R U' R' U' R U R D R' U' R D' R' U2 R',y R U R' F' R U2 R' U2 R' F R U R U2 R',L U2 L' U2 L F' L' U' L U L F L2,y2 R U2 R' U2 R B' R' U' R U R B R2,https://www.youtube.com/watch?v=JvqGU0UZPcE&start=190s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyrrgggggggbobrrrrrrwwwwwwwwwgbobbbbbbogroooooo,0
+PLL14,PLL,Ra,Adj Swap,y R U' R' U' R U R D R' U' R D' R' U2 R',y R U R' F' R U2 R' U2 R' F R U R U2 R',L U2 L' U2 L F' L' U' L U L F L2,y2 R U' R2 D' R U R' D R U' R U' R' U R U R',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=190s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyrrgggggggbobrrrrrrwwwwwwwwwgbobbbbbbogroooooo,0
 PLL15,PLL,Rb,Adj Swap,R' U2 R U2 R' F R U R' U' R' F' R2,y R2 F R U R U' R' F' R U2 R' U2 R,R' U2 R' D' R U' R' D R U R U' R' U' R,y R2' F R U R U' R' F' R U2' R' U2 R,https://www.youtube.com/watch?v=JvqGU0UZPcE&start=208s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyygrooooooorgrggggggwwwwwwwwwobbrrrrrrbogbbbbbb,0
-PLL16,PLL,T,Adj Swap,R U R' U' R' F R2 U' R' U' R U R' F',R U R' U' R' F R2 U' R' U F' L' U L,y2 L' U' L U L F' L2 U L U L' U' L F,R2 U R2 U' R2 U' D R2 U' R2 U R2 D',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=227s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyybrgooooooggoggggggwwwwwwwwwrorrrrrrrobbbbbbbb,0
+PLL16,PLL,T,Adj Swap,R U R' U' R' F R2 U' R' U' R U R' F',R U R' U' R' F R2 U' R' U F' L' U L,R2 U R2 U' R2 U' D R2 U' R2 U R2 D',F R U' R' U R U R2 F' R U R U' R',https://www.youtube.com/watch?v=JvqGU0UZPcE&start=227s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyybrgooooooggoggggggwwwwwwwwwrorrrrrrrobbbbbbbb,0
 PLL17,PLL,Ua,EPLL,y2 M2 U M U2 M' U M2,R U R' U R' U' R2 U' R' U R' U R,M2 U M' U2 M U M2,y R2 U' S' U2' S U' R2,https://www.youtube.com/watch?v=JvqGU0UZPcE&start=40s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyobooooooogggggggggwwwwwwwwwrorrrrrrrbrbbbbbbb,0
 PLL18,PLL,Ub,EPLL,y2 M2 U' M U2 M' U' M2,R' U R' U' R3 U' R' U R U R2,y2 R2' U R U R' U' R3 U' R' U R',M2 U' M' U2 M U' M2,https://www.youtube.com/watch?v=JvqGU0UZPcE&start=57s,https://img.youtube.com/vi/JvqGU0UZPcE/0.jpg,yyyyyyyyyorooooooogggggggggwwwwwwwwwrbrrrrrrrbobbbbbbb,0
 PLL19,PLL,V,Opp Swap,R' U R' U' R D' R' D R' U D' R2 U' R2' D R2,y R U' R U R' D R D' R U' D R2 U R2 D' R2,R' U R' U' y R' F' R2 U' R' U R' F R F,R' U R U' R' f' U' R U2 R' U' R U' R' f R,https://www.youtube.com/watch?v=1wUqCM94UlA&start=0s,https://img.youtube.com/vi/1wUqCM94UlA/0.jpg,yyyyyyyyyrboooooooggbggggggwwwwwwwwworrrrrrrrbogbbbbbb,0

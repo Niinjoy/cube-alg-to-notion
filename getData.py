@@ -13,14 +13,14 @@ def get_data(algsets):
         datas = soup.select('div.row.mt-2.pt-3.mb-2.pb-3.singlealg.border-bottom')
         # for index, data in enumerate([datas[0]]):
         for index, data in enumerate(datas):
-            case = data.find('h3').text
+            caseid = data.find('h3').text
             catalog = data.find('h5').text
 
             # video link and image (the later one)
             if data.select('li.list-group-item.text-center') != []:
-                video = data.select('li.list-group-item.text-center')[-1]
-                vlink = video.find('a')['href']
-                vimg = video.find('img')['src']
+                video_raw = data.select('li.list-group-item.text-center')[-1]
+                vlink = video_raw.find('a')['href']
+                vimg = video_raw.find('img')['src']
             else:
                 vlink = ""
                 vimg = ""
@@ -51,15 +51,15 @@ def get_data(algsets):
                 all_algs.append({
                     "name":algset + "%02d" % (index+1) + oriname,
                     "algset":algset,
-                    "case":case,
+                    "caseid":caseid,
                     "catalog":catalog,
                     "alg1":alg[0],
                     "alg2":alg[1],
                     "alg3":alg[2],
                     "alg4":alg[3],
-                    "video_link":vlink,
-                    "video_image":vimg,
-                    "face_color":fc,
+                    "video":vlink,
+                    "videoimg":vimg,
+                    "color":fc,
                     "orientation":ori
             })          
     return all_algs
@@ -70,7 +70,7 @@ def main():
     # save as csv
     all_algs = get_data(algsets)
     keys = all_algs[0].keys()
-    pd.DataFrame(all_algs,columns=keys).to_csv('csv/all_algs.csv', encoding='utf-8',index=False)
+    pd.DataFrame(all_algs,columns=keys).to_csv('asset/allAlgs.csv', encoding='utf-8',index=False)
 
 if __name__ == "__main__":
     main()
