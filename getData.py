@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup 
 import pandas as pd
 
-algset = "PLL" # F2L, OLL, PLL
 def get_data(algsets):
     all_algs = []
     for algset in algsets:
@@ -66,6 +65,7 @@ def get_data(algsets):
 
 def main():
     algsets = ["F2L", "OLL", "PLL"]
+    algsets.sort() # Sort by dictionary order, same as what did in Notion database.
 
     # save as csv
     all_algs = get_data(algsets)

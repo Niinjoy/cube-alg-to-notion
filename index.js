@@ -8,27 +8,68 @@ const notion = new Client({ auth: process.env.NOTION_KEY })
 const caseDatabaseId = process.env.NOTION_CASE_DATABASE_ID
 const algDatabaseId = process.env.NOTION_ALG_DATABASE_ID
 const csvDir = __dirname+"/asset/allAlgs.csv"
-const jsonDir = __dirname+"/asset/casePageId.json"
+const caseJsonDir = __dirname+"/asset/casePageId.json"
+const slice_size = 80 // less pages each time to prevent error
 
 async function main() {
-  // 1. Get json array from csv file
+  // Get json array data for caseDb from csv file
   const caseDbData = await readCsv(csvDir)
 
-  // 2. Add all alg cases to case db
-  // await createCasePages(caseDbData)
+  // When working for a new database, or add other algset, init caseDb and algDb
+  // await createInit(caseDbData)
 
-  // 3. Get existing pages in the database, and write to pageId json file
-  // const casePages = await queryDatabase()
-  // writeJson(jsonDir, casePages)
+  // Get json array data for algDb from caseDbData and casePageId.json
+  const algDbData = transformAlgData(caseDbData, readJson(caseJsonDir))
 
-  // 4. read pageId json file, and create json array as { alg, name, rank, pageId }
-  const casePagesRead = readJson(jsonDir)
-  const algDbData = transformAlgData(caseDbData, casePagesRead)
-
-  // 5. Add all algs to alg db
-  // await createAlgPagesSliced(algDbData, 100)
+  // When data updated from SpeedCubeDB, create added algs, and update wrong ranks
+  await createAndUpdateRank(algDbData)
 }
 
+//*========================================================================
+// Combined functions
+//*========================================================================
+
+/**
+ * When working for a new database, or add other algset.
+ * Init caseDb and algDb
+ *
+ * @param caseDbData: Array<{ name: string, algset: string, ... }>
+ */
+async function createInit(caseDbData) {  
+  // 1. Add all alg cases to case db
+  await doWithSliced(createCasePages, caseDbData, slice_size)
+
+  // 2. Get existing pages in the database, and write to pageId json file
+  const casePages = await queryCaseDb()
+  writeJson(caseJsonDir, casePages)
+
+  // 3. read pageId json file, and create json array as { alg, name, rank, pageId }
+  const casePagesRead = readJson(caseJsonDir)
+  const algDbData = transformAlgData(caseDbData, casePagesRead)
+
+  // 4. Add all algs to alg db
+  await doWithSliced(createAlgPages, algDbData, slice_size)
+}
+
+/**
+ * When data updated from SpeedCubeDB.
+ * Create added algs, and update wrong ranks
+ *
+ * @param algDbData: Array<{ alg: string, rank: number, name: string, casePageId: string }>
+ */
+async function createAndUpdateRank(algDbData) {
+  console.log("Start query AlgDb...")
+  const algPages = await queryAlgDb()
+  console.log("AlgDb query is done!")
+  const algsToCreate = getAlgsToCreate(algDbData, algPages)
+  const algsToUpdate = getAlgsToUpdate(algDbData, algPages)
+  console.log("Creating " + algsToCreate.length + " items...")
+  await doWithSliced(createAlgPages, algsToCreate, slice_size)
+  console.log("Creating is done!")
+  console.log("Updating " + algsToUpdate.length + " alg ranks...")
+  await doWithSliced(updateAlgRank, algsToUpdate, slice_size)
+  console.log("Updating rank is done!")
+}
 //*========================================================================
 // Requests
 //*========================================================================
@@ -72,7 +113,7 @@ async function createCasePages(caseDbData) {
  * Returns array of objects with name property and pageId
  * Array<{ name: string, pageId: string }>
  */
-async function queryDatabase() {
+async function queryCaseDb() {
   let pages = []
   let cursor = undefined
   while (true) {
@@ -99,18 +140,18 @@ async function queryDatabase() {
 /**
  * Adds pages to alg database
  *
- * @param algDbData: Array<{ alg: string, rank: num, name: string, pageId: string }>
+ * @param algDbData: Array<{ alg: string, rank: number, name: string, casePageId: string }>
  */
 async function createAlgPages(algDbData) {
   await Promise.all(
-    algDbData.map(({ alg, rank, name, pageId }) =>
+    algDbData.map(({ alg, rank, name, casePageId }) =>
       notion.pages.create({
         parent: { database_id: algDatabaseId },
         properties: {
           alg: { title: [{ text: { content: alg }}]},
-          rank: { number: rank},
+          rank: { number: rank },
           name: { rich_text: [{ text: { content: name }}]},
-          case_relation: { relation: [{ id: pageId }]},
+          case_relation: { relation: [{ id: casePageId }]},
         },
       })
     )
@@ -118,16 +159,65 @@ async function createAlgPages(algDbData) {
 }
 
 /**
- * Adds pages to alg database (less pages each time to prevent error)
+ * Create or update database pages with sliced size (less pages each time to prevent error)
  *
- * @param algDbData: Array<{ alg: string, rank: number, name: string, pageId: string }>
- * @param slice_size: number
+ * @param func: function to create or update database pages
+ * @param data: Array for func input
  */
-async function createAlgPagesSliced(algDbData, slice_size) {
-  const data_len = algDbData.length
-  for (var i = 0; i < algDbData.length; i = i + slice_size) {
-    await createAlgPages(algDbData.slice(i, i + slice_size))
+async function doWithSliced(func ,data, slice_size) {
+  const data_len = data.length
+  for (var i = 0; i < data.length; i = i + slice_size) {
+    await func(data.slice(i, i + slice_size))
   }
+}
+
+/**
+ * Query the alg database
+ *
+ * Returns array of objects with alg, rank, name properties and pageId
+ * Array<{ alg: string, rank: number, name: string, pageId: string }>
+ */
+ async function queryAlgDb() {
+  let pages = []
+  let cursor = undefined
+  while (true) {
+    const { results, next_cursor } = await notion.databases.query({
+      database_id: algDatabaseId,
+      sorts: [{ property: "name", direction: "ascending" }, { property: "rank", direction: "ascending" }],
+      page_size: 100,
+      start_cursor: cursor,
+    })
+    pages.push(...results)
+    console.log(pages.length + " pages")
+    if (!next_cursor) {
+      break
+    }
+    cursor = next_cursor
+  }
+  return pages.map(page => {
+    const alg = page.properties["alg"].title.map(({ plain_text }) => plain_text).join("")
+    const rank = page.properties["rank"].number
+    const name = page.properties["name"].rich_text.map(({ plain_text }) => plain_text).join("")
+    return { alg, rank, name, pageId: page.id }
+  })
+}
+
+/**
+ * Update pages with the wrong rank in alg database
+ *
+ * @param algsToUpdate: Array<{ rank: number, pageId: string }>
+ */
+async function updateAlgRank(algsToUpdate) {
+  await Promise.all(
+    algsToUpdate.map(({ rank, pageId }) =>
+      notion.pages.update({
+        page_id: pageId,
+        properties: {
+          rank: { number: rank },
+        },
+      })
+    )
+  )
 }
 
 //*========================================================================
@@ -178,21 +268,56 @@ function readJson(dir) {
 }
 
 /**
- * Combine name, algs from caseDbData and pageId from casePages (just combine or check names are the same?)
- * Change the structure to { alg, name, rank, pageId }
+ * Combine name, algs from caseDbData and pageId from casePages
+ * Change the structure to { alg, name, rank, casePageId }
  *
  * @param caseDbData: Array<{ name: string, algset: string, ... }>
  * @param casePages: Array<{ name: string, pageId: string }>
  *
  * Returns algs of each case with rank
- * Array<{ alg: string, rank: number, name: string, pageId: string }>
+ * Array<{ alg: string, rank: number, name: string, casePageId: string }>
  */
 function transformAlgData(caseDbData, casePages) {
   return caseDbData.map((x, i) => {
     return [x.alg1, x.alg2, x.alg3, x.alg4].filter(Boolean).map((alg, alg_index) => {
-      return {alg: alg, rank: alg_index+1, name: x.name, pageId: casePages[i].pageId}
+      return {alg: alg, rank: alg_index+1, name: x.name, casePageId: casePages[i].pageId}
     })
   }).flat()
+}
+
+/**
+ * Compare algDbData (newData) with algPages (oldData), those undifined need to create
+ *todo
+ * @param algDbData: Array<{ alg: string, rank: number, name: string, casePageId: string }>
+ * @param algPages: Array<{ alg: string, rank: number, name: string, pageId: string }>
+ *
+ * Returns algs needs to create
+ * Array<{ alg: string, rank: number, name: string, casePageId: string }>
+ */
+function getAlgsToCreate(algDbData, algPages) {
+  const algsToCreate = algDbData.reduce((algsToCreate, newData) => {
+    if (algPages.find(x => x.alg === newData.alg) === undefined) algsToCreate.push(newData)
+    return algsToCreate
+  }, [])
+  return algsToCreate
+}
+
+/**
+ * Compare algPages (oldData) with algDbData (newData), update wrong rank (undifined will be 5)
+ *
+ * @param algDbData: Array<{ alg: string, rank: number, name: string, casePageId: string }>
+ * @param algPages: Array<{ alg: string, rank: number, name: string, pageId: string }>
+ *
+ * Returns algs' rank needs to update
+ * Array<{ rank: number, pageId: string }>
+ */
+function getAlgsToUpdate(algDbData, algPages) {
+  const algsToUpdate = algPages.reduce((algsToUpdate, oldData) => {
+    const newData = algDbData.find(x => x.alg === oldData.alg)
+    if (newData === undefined || newData.rank !== oldData.rank) algsToUpdate.push({rank: (newData === undefined) ? 5 : newData.rank, pageId: oldData.pageId})
+    return algsToUpdate
+  }, [])
+  return algsToUpdate
 }
 
 main()
