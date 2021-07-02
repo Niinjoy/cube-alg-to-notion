@@ -12,6 +12,7 @@ const caseJsonDir = __dirname+"/asset/casePageId.json"
 const algJsonDir = __dirname+"/asset/algPageInfo.json"
 const faveJsonDir = __dirname+"/asset/algFave.json"
 const slice_size = 80 // less pages each time to prevent error
+const doQueryCaseDb = 0 // 0 for not query, 1 for query. No need to query again if no case added to caseDb
 const doQueryAlgDb = 1 // 0 for not query, 1 for query. No need to query again if no change made
 
 async function main() {
@@ -19,7 +20,7 @@ async function main() {
   const caseDbData = await readCsv(csvDir)
 
   // When working for a new database, or add other algset, init caseDb and algDb
-  // await createInit(caseDbData)
+  // await createInit(caseDbData, doQueryCaseDb)
 
   // Get json array data for algDb from caseDbData and casePageId.json
   const algDbData = transformAlgData(caseDbData, readJson(caseJsonDir))
@@ -37,21 +38,38 @@ async function main() {
  * Init caseDb and algDb
  *
  * @param caseDbData: Array<{ name: string, algset: string, ... }>
+ * @param doQueryCaseDb: 0 or 1
  */
-async function createInit(caseDbData) {  
-  // 1. Add all alg cases to case db
-  await doWithSliced(createCasePages, caseDbData, slice_size)
+async function createInit(caseDbData) {
+  // Get the algsets had added to caseDb
+  const addedAlgset =  await getAddedAlgset()
+  // Subtract added cases in caseDbData
+  const caseDbDataNew = caseDbData.reduce((caseDbDataNew, data) => {
+    if (addedAlgset.indexOf(data.algset) === -1) caseDbDataNew.push(data)
+    return caseDbDataNew
+  }, [])  
+  // Add all alg cases to case db
+  console.log("Adding " + caseDbDataNew.length + " cases to caseDb...")
+  await doWithSliced(createCasePages, caseDbDataNew, slice_size)
+  console.log(caseDbDataNew.length + " cases added!")
 
-  // 2. Get existing pages in the database, and write to pageId json file
-  const casePages = await queryCaseDb()
-  writeJson(caseJsonDir, casePages)
-
-  // 3. read pageId json file, and create json array as { alg, name, rank, pageId }
+  // If new cases added to caseDb, get existing pages in the database, and write to pageId json file
+  if (doQueryCaseDb) {
+    const casePages = await queryCaseDb()
+    writeJson(caseJsonDir, casePages)
+  }
+  // Read pageId json file
   const casePagesRead = readJson(caseJsonDir)
-  const algDbData = transformAlgData(caseDbData, casePagesRead)
 
-  // 4. Add all algs to alg db
+  // Add relation of different oreintations with main oreintation for F2L, just need to do once
+  await doWithSliced(addOrientRelation, getOrientRelation(casePagesRead, "F2L"), slice_size)
+
+  // Create json array as { alg, name, rank, pageId } for algDb
+  const algDbData = transformAlgData(caseDbDataNew, casePagesRead)
+  // Add all algs to alg db
+  console.log("Adding " + algDbData.length + " algs to algDb...")
   await doWithSliced(createAlgPages, algDbData, slice_size)
+  console.log(algDbData.length + " algs added!")
 }
 
 /**
@@ -126,10 +144,6 @@ async function updateRankAndFave(algDbData) {
  * @param caseDbData: Array<{ name: string, algset: string, ... }>
  */
 async function createCasePages(caseDbData) {
-  const isEmpty = await isEmptyDb(caseDatabaseId)
-  if (!isEmpty) {
-    return
-  }
   await Promise.all(
     caseDbData.map(({ name, algset, caseid, catalog, alg1, alg2, alg3, alg4, video, videoimg, color, orientation }) =>
       notion.pages.create({
@@ -139,13 +153,13 @@ async function createCasePages(caseDbData) {
           algset: { select: { name: algset }},
           caseid: { rich_text: [{ text: { content: caseid }}]},
           catalog: { rich_text: [{ text: { content: catalog }}]},
-          alg1: { rich_text: [{ text: { content: alg1 }}]},
-          alg2: { rich_text: [{ text: { content: alg2 }}]},
-          alg3: { rich_text: [{ text: { content: alg3 }}]},
-          alg4: { rich_text: [{ text: { content: alg4 }}]},
+          // alg1: { rich_text: [{ text: { content: alg1 }}]},
+          // alg2: { rich_text: [{ text: { content: alg2 }}]},
+          // alg3: { rich_text: [{ text: { content: alg3 }}]},
+          // alg4: { rich_text: [{ text: { content: alg4 }}]},
           video: { url: video!==""?video:null}, // "" is not allowed for url properties
           videoimg: { url: videoimg!==""?videoimg:null},
-          color: { rich_text: [{ text: { content: color }}]},
+          // color: { rich_text: [{ text: { content: color }}]},
           orientation: { select: { name: orientation }},
         },
       })
@@ -181,6 +195,24 @@ async function queryCaseDb() {
     const name = richText.map(({ plain_text }) => plain_text).join("")
     return { name, pageId: page.id }
   })
+}
+
+/**
+ * Update pages with the wrong rank in alg database
+ *
+ * @param oreintRelation: Array<{ allOrientations: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
+ */
+ async function addOrientRelation(oreintRelation) {
+  await Promise.all(
+    oreintRelation.map(({ allOrientations, pageId }) =>
+      notion.pages.update({
+        page_id: pageId,
+        properties: {
+          allOrientations: { relation: allOrientations },
+        },
+      })
+    )
+  )
 }
 
 /**
@@ -289,6 +321,20 @@ async function isEmptyDb(databaseId) {
 }
 
 /**
+ * Returns the array of algsets added to caseDb
+ * Prevents duplication when add other algsets
+ * Example: [ 'F2L', 'PLL', 'OLL' ]
+ */
+ async function getAddedAlgset() {
+  const { results } = await notion.databases.query({
+    database_id: caseDatabaseId,
+    filter: { property: "name", text: { ends_with : "01" }},
+    page_size: 100,
+  })
+  return results.map(result => result.properties["name"].title.map(({ plain_text }) => plain_text.substring(0,plain_text.length-2)).join(""))
+}
+
+/**
  * Reads json objects from csv
  * 
  * @param dir: string
@@ -318,6 +364,29 @@ async function readCsv(dir) {
 function readJson(dir) {
   const data = fs.readFileSync(dir)
   return JSON.parse(data)
+}
+
+/**
+ * Get relation of different oreintations with main oreintation for algset (currently only for F2L)
+ *
+ * @param casePages: Array<{ name: string, pageId: string }>
+ * @param algset: string
+ *
+ * Returns all orientations' pageid with main orientation's pageid
+ * Array<{ allOrientations: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
+ */
+function getOrientRelation(casePagesRead, algset) {
+  const oreintRelation = casePagesRead.reduce((oreintRelation, mainPage) => {
+    if (mainPage.name.includes(algset) && !mainPage.name.includes("-")) {
+      const allOrientations = casePagesRead.reduce((allOrientations, relatedPage) => {
+        if (relatedPage.name.includes(mainPage.name)) allOrientations.push({id: relatedPage.pageId})
+        return allOrientations
+      }, [])    
+      oreintRelation.push({allOrientations: allOrientations, pageId: mainPage.pageId})
+    }
+    return oreintRelation
+  }, [])
+  return oreintRelation
 }
 
 /**
