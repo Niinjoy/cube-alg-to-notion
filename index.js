@@ -71,6 +71,9 @@ async function createInit(caseDbData) {
  * @param caseDbData: Array<{ name: string, algset: string, ... }>
  */
 async function updateRankAndFave(caseDbData) {
+  // run this line if program shut down after create algs and before querAlgDb, to make sure the json file is same as algDb
+  // const algPages = await queryAlgDb()
+
   // Get json array data for algDb from caseDbData and casePageId.json
   const algDbData = transformAlgData(caseDbData, readJson(caseJsonDir))
 
@@ -83,6 +86,11 @@ async function updateRankAndFave(caseDbData) {
 
   // Query algDb, and save to json file. Time consuming.
   const algPages = await queryAlgDb()
+
+  // Update alg_relation of algs to case follow alg ranks
+  console.log("Updating alg_relation for caseDb...")
+  await doWithSliced(updateAlgRelation, getAlgRelation(algPagesRead), slice_size)
+  console.log("Alg_relation updated for caseDb!")
 }
 
 /**
@@ -95,12 +103,12 @@ async function updateRankAndFave(caseDbData) {
  async function createAndUpdateRank(algDbData, algPagesRead) {
   const algsToCreate = getAlgsToCreate(algDbData, algPagesRead)
   const algsToUpdate = getAlgsToUpdateRank(algDbData, algPagesRead)
-  console.log("Creating " + algsToCreate.length + " items...")
-  await doWithSliced(createAlgPages, algsToCreate, slice_size)
-  console.log("Creating is done!")
   console.log("Updating " + algsToUpdate.length + " alg ranks...")
   await doWithSliced(updateAlgRank, algsToUpdate, slice_size)
   console.log("Updating rank is done!")
+  console.log("Creating " + algsToCreate.length + " items...")
+  await doWithSliced(createAlgPages, algsToCreate, slice_size)
+  console.log("Creating is done!")
 }
 
 /**
@@ -302,6 +310,24 @@ async function updateAlgRank(algsToUpdate) {
     )
   )
 }
+
+/**
+ * Update alg_relation of algs to case follow alg ranks
+ *
+ * @param algRelations: Array<{ alg_relation: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
+ */
+ async function updateAlgRelation(algRelations) {
+  await Promise.all(
+    algRelations.map(({ alg_relation, pageId }) =>
+      notion.pages.update({
+        page_id: pageId,
+        properties: {
+          alg_relation: { relation: alg_relation },
+        },
+      })
+    )
+  )
+}
 //*========================================================================
 // Helpers
 //*========================================================================
@@ -373,17 +399,17 @@ function readJson(dir) {
  * Array<{ allOrientations: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
  */
 function getOrientRelation(casePagesRead, algset) {
-  const oreintRelation = casePagesRead.reduce((oreintRelation, mainPage) => {
+  const oreintRelations = casePagesRead.reduce((oreintRelations, mainPage) => {
     if (mainPage.name.includes(algset) && !mainPage.name.includes("-")) {
       const allOrientations = casePagesRead.reduce((allOrientations, relatedPage) => {
         if (relatedPage.name.includes(mainPage.name)) allOrientations.push({id: relatedPage.pageId})
         return allOrientations
       }, [])    
-      oreintRelation.push({allOrientations: allOrientations, pageId: mainPage.pageId})
+      oreintRelations.push({allOrientations: allOrientations, pageId: mainPage.pageId})
     }
-    return oreintRelation
+    return oreintRelations
   }, [])
-  return oreintRelation
+  return oreintRelations
 }
 
 /**
@@ -457,6 +483,26 @@ function getAlgsToUpdateFave(algPages) {
     return algsToUpdate
   }, [])
   return algsToUpdate
+}
+
+/**
+ * Get relation of algs to case follow alg ranks
+ *
+ * @param algPagesRead: Array<{ alg: string, rank: number, name: string, fave: bool, pageId: string }>
+ *
+ * Returns algs' pageid with case's pageid
+ * Array<{ alg_relation: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
+ */
+ function getAlgRelation(algPagesRead) {
+  const casePagesRead = readJson(caseJsonDir)
+  const algRelations = casePagesRead.map( casePage => {
+    const algPages = algPagesRead.reduce((algPages, algPage) => {
+      if (algPage.name === casePage.name) algPages.push({id: algPage.pageId})
+      return algPages
+    }, [])    
+    return {alg_relation: algPages, pageId: casePage.pageId}
+  }, [])
+  return algRelations
 }
 
 main()
