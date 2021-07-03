@@ -72,7 +72,7 @@ async function createInit(caseDbData) {
  */
 async function updateRankAndFave(caseDbData) {
   // run this line if program shut down after create algs and before querAlgDb, to make sure the json file is same as algDb
-  // const algPages = await queryAlgDb()
+  // await queryAlgDb()
 
   // Get json array data for algDb from caseDbData and casePageId.json
   const algDbData = transformAlgData(caseDbData, readJson(caseJsonDir))
@@ -85,7 +85,7 @@ async function updateRankAndFave(caseDbData) {
   await upadateFave(algPagesRead)
 
   // Query algDb, and save to json file. Time consuming.
-  const algPages = await queryAlgDb()
+  await queryAlgDb()
 
   // Update alg_relation of algs to case follow alg ranks
   console.log("Updating alg_relation for caseDb...")
@@ -159,7 +159,7 @@ async function createCasePages(caseDbData) {
           // alg3: { rich_text: [{ text: { content: alg3 }}]},
           // alg4: { rich_text: [{ text: { content: alg4 }}]},
           video: { url: video!==""?video:null}, // "" is not allowed for url properties
-          videoimg: { url: videoimg!==""?videoimg:null},
+          // videoimg: { url: videoimg!==""?videoimg:null},
           // color: { rich_text: [{ text: { content: color }}]},
           orientation: { select: { name: orientation }},
         },
