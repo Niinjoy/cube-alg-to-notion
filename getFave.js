@@ -1,9 +1,7 @@
 const fs = require("fs")
-const util = require('util')
-const request = require("request");
+const fetch = require('node-fetch'); 
 const cheerio = require('cheerio')
 
-const requestPromise = util.promisify(request);
 const speedCubeId = "1952"
 const algsets = ["F2L", "OLL", "PLL"]
 const algLost = ["U R U' R'", "F' r U r'", "U L U' L'", "U f R' f'"] // F2L 1 won't show complete, so add manually
@@ -20,8 +18,9 @@ async function main() {
 
 async function getAlgFave(algset) {
   const url = "https://www.speedcubedb.com/algsheet/" + speedCubeId + "/" + algset
-  const response = await requestPromise(url)
-  const data = cheerio.load(response.body)
+  const response = await fetch(url)
+  const body = await response.text()
+  const data = cheerio.load(body)
   var algs = []
   data("span").each(function(i, elem) {
     algs[i] = data(this).text()

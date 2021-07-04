@@ -1,0 +1,32 @@
+{
+  "name": "cube-alg-to-notion",
+  "version": "1.0.0",
+  "description": "Sync Rubik's Cube algorithms from SpeedCubeDb to Notion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niinjoy/cube-alg-to-notion.git"
+  },
+  "keywords": [
+    "Rubik's",
+    "Cube",
+    "CFOP",
+    "Notion"
+  ],
+  "author": "Niin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Niinjoy/cube-alg-to-notion/issues"
+  },
+  "homepage": "https://github.com/Niinjoy/cube-alg-to-notion#readme",
+  "dependencies": {
+    "@notionhq/client": "^0.2.1",
+    "cheerio": "^1.0.0-rc.10",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
