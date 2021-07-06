@@ -152,7 +152,7 @@ async function createCasePages(caseDbData) {
         properties: {
           name: { title: [{ text: { content: name }}]},
           algset: { select: { name: algset }},
-          caseid: { rich_text: [{ text: { content: caseid }}]},
+          caseid: { rich_text: [{ text: { content: caseid }, annotations: { bold: true }}]},
           catalog: { rich_text: [{ text: { content: catalog }}]},
           // alg1: { rich_text: [{ text: { content: alg1 }}]},
           // alg2: { rich_text: [{ text: { content: alg2 }}]},
@@ -493,7 +493,7 @@ function getAlgsToUpdateFave(algPages) {
  * Returns algs' pageid with case's pageid
  * Array<{ alg_relation: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
  */
- function getAlgRelation(algPagesRead) {
+function getAlgRelation(algPagesRead) {
   const casePagesRead = readJson(caseJsonDir)
   const algRelations = casePagesRead.map( casePage => {
     const algPages = algPagesRead.reduce((algPages, algPage) => {
