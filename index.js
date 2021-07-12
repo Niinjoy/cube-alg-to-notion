@@ -201,7 +201,7 @@ async function queryCaseDb() {
 }
 
 /**
- * Update pages with the wrong rank in alg database
+ * add orient_relation for F2L cases
  *
  * @param oreintRelation: Array<{ allOrientations: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
  */
@@ -211,7 +211,7 @@ async function queryCaseDb() {
       notion.pages.update({
         page_id: pageId,
         properties: {
-          allOrientations: { relation: allOrientations },
+          orient_relation: { relation: allOrientations },
         },
       })
     )
@@ -390,19 +390,19 @@ function readJson(dir) {
 }
 
 /**
- * Get relation of different oreintations with main oreintation for algset (currently only for F2L)
+ * Get relation of different oreintations with each other (currently only for F2L)
  *
- * @param casePages: Array<{ name: string, pageId: string }>
+ * @param casePagesRead: Array<{ name: string, pageId: string }>
  * @param algset: string
  *
- * Returns all orientations' pageid with main orientation's pageid
+ * Returns all orientations' pageid with one orientation's pageid
  * Array<{ allOrientations: Array<{ id: pageId, id: pageId, id: pageId, id: pageId }>, pageId: string }>
  */
 function getOrientRelation(casePagesRead, algset) {
   const oreintRelations = casePagesRead.reduce((oreintRelations, mainPage) => {
-    if (mainPage.name.includes(algset) && !mainPage.name.includes("-")) {
+    if (mainPage.name.includes(algset)) {
       const allOrientations = casePagesRead.reduce((allOrientations, relatedPage) => {
-        if (relatedPage.name.includes(mainPage.name)) allOrientations.push({id: relatedPage.pageId})
+        if (relatedPage.name.slice(0,5) === mainPage.name.slice(0,5)) allOrientations.push({id: relatedPage.pageId})
         return allOrientations
       }, [])    
       oreintRelations.push({allOrientations: allOrientations, pageId: mainPage.pageId})
